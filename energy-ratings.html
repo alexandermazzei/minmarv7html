@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1593195809331-b5a10bedda0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="energy-savings.html" class="text-gray-300 hover:underline">Energy Savings</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Energy Ratings</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Window & Door Energy Ratings</h1>
+                <p class="page-banner-description text-gray-200">Understanding performance values and what they mean for your home</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">The Science Behind Energy Efficiency</h2>
+                    <p class="text-lg text-gray-700">
+                        Minmar windows and doors are engineered to maximize energy efficiency, helping you maintain 
+                        comfortable indoor temperatures while reducing energy consumption. Understanding energy ratings 
+                        helps you make informed decisions about which products are right for your home and climate.
+                    </p>
+                </div>
+              
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- U-Factor -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">U-Factor</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">🔥❄️</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">0.25</div><div class="text-sm text-center text-gray-500 mb-4">Range: 0.25 - 1.25 (Lower is better)</div><p class="text-gray-700 mb-3">U-Factor measures how well a product prevents heat from escaping your home. Lower U-Factor values indicate better insulation performance.</p><p class="text-gray-700">Minmar's premium windows achieve U-Factors as low as 0.25, exceeding ENERGY STAR® requirements in all climate zones.</p></div></div>
+                    <!-- Solar Heat Gain Coefficient -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">Solar Heat Gain Coefficient</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">☀️</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">0.28</div><div class="text-sm text-center text-gray-500 mb-4">Range: 0.25 - 0.80 (Lower is better for cooling)</div><p class="text-gray-700 mb-3">Solar Heat Gain Coefficient (SHGC) measures how well a product blocks heat from the sun. Lower SHGC values indicate better shading ability.</p><p class="text-gray-700">For homes in warm climates, a lower SHGC helps reduce cooling costs. In cold climates, a higher SHGC can be beneficial for passive solar heating.</p></div></div>
+                    <!-- Visible Transmittance -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">Visible Transmittance</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">💡</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">0.52</div><div class="text-sm text-center text-gray-500 mb-4">Range: 0.30 - 0.80 (Higher allows more light)</div><p class="text-gray-700 mb-3">Visible Transmittance (VT) measures how much light comes through a product. Higher VT values indicate more daylight entering your home.</p><p class="text-gray-700">Minmar's optimized glass packages balance light transmission with energy performance, providing bright interiors without sacrificing efficiency.</p></div></div>
+                    <!-- Air Leakage -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">Air Leakage</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">💨</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">0.1</div><div class="text-sm text-center text-gray-500 mb-4">Range: 0.1 - 0.3 (Lower is better)</div><p class="text-gray-700 mb-3">Air Leakage (AL) measures how much air passes through cracks in the window or door assembly. Lower AL values indicate better sealing performance.</p><p class="text-gray-700">Minmar's precision engineering and multi-point weather sealing systems minimize air infiltration for enhanced comfort and energy savings.</p></div></div>
+                    <!-- Condensation Resistance -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">Condensation Resistance</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">💧</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">65</div><div class="text-sm text-center text-gray-500 mb-4">Range: 1 - 100 (Higher is better)</div><p class="text-gray-700 mb-3">Condensation Resistance (CR) measures how well a product resists the formation of condensation on the interior surface. Higher CR values indicate better resistance to condensation.</p><p class="text-gray-700">Minmar windows with warm-edge spacer technology and thermal breaks achieve high CR ratings, reducing the potential for condensation, frost, and related issues.</p></div></div>
+                    <!-- Design Pressure -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:-translate-y-1"><div class="bg-minmar-blue p-4 text-white text-center"><h3 class="text-xl font-bold">Design Pressure</h3></div><div class="p-6"><div class="text-center text-4xl text-minmar-blue mb-4">🌬️</div><div class="text-4xl font-bold text-center text-dark-blue mb-2">DP40</div><div class="text-sm text-center text-gray-500 mb-4">Higher values indicate stronger products</div><p class="text-gray-700 mb-3">Design Pressure (DP) measures the structural strength of a window or door against wind and water penetration. Higher DP ratings indicate stronger products.</p><p class="text-gray-700">Minmar windows are rigorously tested to achieve high DP ratings, ensuring reliable performance even in challenging weather conditions and coastal environments.</p></div></div>
+                </div>
+              
+                <div class="bg-light-blue p-8 rounded-lg mb-16">
+                    <div class="flex flex-wrap md:flex-nowrap items-center gap-8">
+                        <div class="text-center md:w-1/4">
+                            <div class="bg-minmar-blue h-48 w-48 mx-auto flex items-center justify-center text-white rounded-lg mb-4 shadow-md">
+                                <img src="https://www.energystar.gov/sites/default/files/ENERGY%20STAR%20Mark_Vert_PRINT_PMS.png" alt="ENERGY STAR Logo" class="h-32 w-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-3/4">
+                            <h2 class="text-2xl font-bold text-dark-blue mb-4">ENERGY STAR® Certified Products</h2>
+                            <p class="text-gray-700 mb-3">Minmar is a proud ENERGY STAR® partner, offering windows and doors that meet or exceed the program's strict energy efficiency guidelines set by the U.S. Environmental Protection Agency.</p>
+                            <p class="text-gray-700 mb-3">Products that earn the ENERGY STAR® label help you save energy and money without sacrificing performance. ENERGY STAR® certified windows and doors can reduce your home energy bills by an average of 12% compared to non-certified products.</p>
+                            <p class="text-gray-700">All Minmar windows and doors are tested and certified by the National Fenestration Rating Council (NFRC), ensuring that our performance claims are independently verified.</p>
+                        </div>
+                    </div>
+                </div>
+              
+                <h2 class="text-3xl font-bold text-dark-blue mb-4">Performance Specifications by Product Line</h2>
+                <p class="text-lg text-gray-700 mb-8">The table below shows typical performance values for our most popular window and door series. Actual values may vary based on size, configuration, and glass package options.</p>
+                <div class="overflow-x-auto mb-16 shadow-md rounded-lg">
+                    <table class="w-full border-collapse bg-white">
+                        <thead><tr class="bg-dark-blue text-white"><th class="p-4 text-left">Product Series</th><th class="p-4 text-left">U-Factor</th><th class="p-4 text-left">SHGC</th><th class="p-4 text-left">VT</th><th class="p-4 text-left">AL</th><th class="p-4 text-left">CR</th></tr></thead>
+                        <tbody>
+                            <tr class="bg-white"><td class="p-4 border-b border-gray-200">9000 Series Windows (Triple Pane)</td><td class="p-4 border-b border-gray-200 text-energy-green font-bold">0.25</td><td class="p-4 border-b border-gray-200">0.28</td><td class="p-4 border-b border-gray-200">0.42</td><td class="p-4 border-b border-gray-200 text-energy-green font-bold">0.1</td><td class="p-4 border-b border-gray-200 text-energy-green font-bold">70</td></tr>
+                            <tr class="bg-light-gray"><td class="p-4 border-b border-gray-200">8000 Series Windows (Double Pane)</td><td class="p-4 border-b border-gray-200">0.30</td><td class="p-4 border-b border-gray-200">0.28</td><td class="p-4 border-b border-gray-200">0.52</td><td class="p-4 border-b border-gray-200">0.1</td><td class="p-4 border-b border-gray-200">65</td></tr>
+                            <tr class="bg-white"><td class="p-4 border-b border-gray-200">7000 Series Windows</td><td class="p-4 border-b border-gray-200">0.32</td><td class="p-4 border-b border-gray-200 text-energy-green font-bold">0.27</td><td class="p-4 border-b border-gray-200">0.51</td><td class="p-4 border-b border-gray-200">0.2</td><td class="p-4 border-b border-gray-200">62</td></tr>
+                            <tr class="bg-light-gray"><td class="p-4 border-b border-gray-200">Deluxe Patio Doors</td><td class="p-4 border-b border-gray-200">0.31</td><td class="p-4 border-b border-gray-200">0.30</td><td class="p-4 border-b border-gray-200 text-energy-green font-bold">0.58</td><td class="p-4 border-b border-gray-200">0.2</td><td class="p-4 border-b border-gray-200">60</td></tr>
+                             <tr class="bg-white"><td class="p-4 border-b border-gray-200">Premium Entry Doors</td><td class="p-4 border-b border-gray-200">0.30</td><td class="p-4 border-b border-gray-200">0.25</td><td class="p-4 border-b border-gray-200">0.40</td><td class="p-4 border-b border-gray-200">0.1</td><td class="p-4 border-b border-gray-200">65</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+              
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">ENERGY STAR® Climate Zones</h2>
+                    <p class="text-lg text-gray-700 mb-8">ENERGY STAR® divides the United States into four climate zones, each with specific energy performance requirements. Minmar offers optimized glass packages for each zone, ensuring ideal performance for your specific location.</p>
+                    <div class="bg-gray-200 p-4 rounded-lg mb-8 text-center shadow-md"><svg width="100%" height="400" viewBox="0 0 800 400" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto"><rect width="800" height="400" fill="#E5F0F9"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#0057A6" font-family="Arial" font-weight="bold" font-size="20">ENERGY STAR® CLIMATE ZONE MAP (Placeholder)</text></svg></div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="bg-minmar-blue p-4 text-white"><h3 class="text-xl font-bold">Northern Zone</h3></div><div class="p-4 text-gray-700"><ul class="space-y-2"><li>U-Factor: ≤ 0.30</li><li>SHGC: Any</li><li>Optimized for: Heating</li><li>Recommended: Higher SHGC for passive solar gain</li></ul></div></div>
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="bg-minmar-blue p-4 text-white"><h3 class="text-xl font-bold">North-Central Zone</h3></div><div class="p-4 text-gray-700"><ul class="space-y-2"><li>U-Factor: ≤ 0.30</li><li>SHGC: ≤ 0.40</li><li>Optimized for: Balanced heating and cooling</li><li>Recommended: Moderate SHGC for year-round performance</li></ul></div></div>
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="bg-minmar-blue p-4 text-white"><h3 class="text-xl font-bold">South-Central Zone</h3></div><div class="p-4 text-gray-700"><ul class="space-y-2"><li>U-Factor: ≤ 0.30</li><li>SHGC: ≤ 0.30</li><li>Optimized for: Balanced with emphasis on cooling</li><li>Recommended: Lower SHGC to reduce cooling costs</li></ul></div></div>
+                        <div class="bg-white rounded-lg shadow-md overflow-hidden"><div class="bg-minmar-blue p-4 text-white"><h3 class="text-xl font-bold">Southern Zone</h3></div><div class="p-4 text-gray-700"><ul class="space-y-2"><li>U-Factor: ≤ 0.40</li><li>SHGC: ≤ 0.25</li><li>Optimized for: Cooling</li><li>Recommended: Lowest SHGC to block solar heat gain</li></ul></div></div>
+                    </div>
+                </div>
+              
+                <h2 class="text-3xl font-bold text-dark-blue mb-4">Understanding NFRC Labels</h2>
+                <p class="text-lg text-gray-700 mb-8">Every Minmar window and door comes with a National Fenestration Rating Council (NFRC) label that displays its certified performance ratings. Here's how to read and understand these labels:</p>
+                <div class="flex flex-wrap md:flex-nowrap gap-8 mb-16">
+                    <div class="md:w-2/5">
+                        <div class="border border-gray-300 rounded-lg overflow-hidden shadow-md">
+                            <div class="bg-minmar-blue text-white p-6 text-center"><span class="text-xl font-bold">NFRC LABEL</span></div>
+                            <div class="bg-gray-200 p-8 h-96 flex items-center justify-center"><img src="https://www.nfrc.org/wp-content/uploads/2019/03/NFRC_Label_Temp_Tag_website-1.png" alt="Sample NFRC Label" class="max-h-full max-w-full object-contain"></div>
+                        </div>
+                    </div>
+                    <div class="md:w-3/5 text-gray-700">
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">NFRC Label Guide</h3>
+                        <p class="mb-6">The NFRC label provides standardized, accurate information about the energy performance of windows and doors. Each product is tested according to the same procedures, allowing you to make fair comparisons between products.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">1</div><div><strong>Manufacturer Information</strong>: Shows the company name, product line, and specific configuration being rated.</div></div>
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">2</div><div><strong>U-Factor</strong>: Measures how well a product prevents heat from escaping. Lower numbers indicate better insulating value.</div></div>
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">3</div><div><strong>Solar Heat Gain Coefficient</strong>: Measures how well a product blocks heat from sunlight. Lower numbers indicate less solar heat transmitted.</div></div>
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">4</div><div><strong>Visible Transmittance</strong>: Measures how much light comes through. Higher numbers indicate more daylight transmitted.</div></div>
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">5</div><div><strong>Air Leakage</strong>: Measures how much air will enter through cracks. Lower numbers indicate less air leakage.</div></div>
+                            <div class="flex items-start gap-4"><div class="flex-shrink-0 w-6 h-6 rounded-full bg-minmar-blue text-white flex items-center justify-center font-bold text-sm">6</div><div><strong>Condensation Resistance</strong>: Measures how well the product resists water buildup. Higher numbers indicate better resistance to condensation.</div></div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Calculate Your Potential Energy Savings</h2>
+                    <p class="text-lg text-gray-700 mb-6">See how much you could save by upgrading to energy-efficient Minmar windows and doors in your home.</p>
+                    <a href="calculate-savings.html" class="btn btn-default">Calculate My Savings</a>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

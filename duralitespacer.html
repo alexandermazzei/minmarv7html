@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1617806118233-18e1de247200?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="energy-solutions.html" class="text-gray-300 hover:underline">Energy Solutions</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">DuraLite Spacer</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">DuraLite Spacer Technology</h1>
+                <p class="page-banner-description text-gray-200">Advanced thermal barrier spacer system for superior window insulation and durability</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-dark-blue mb-4">What is DuraLite Spacer?</h2>
+                <p class="text-lg text-gray-700 mb-8">
+                    DuraLite is an advanced spacer system that separates glass panes in insulated glass units. 
+                    Unlike traditional aluminum spacers, DuraLite features a composite structure with minimal 
+                    metal content, dramatically reducing heat transfer at the edge of the glass while enhancing 
+                    structural integrity and moisture protection.
+                </p>
+              
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">Innovative Composite Design</h3>
+                        <p class="text-gray-700 mb-4">
+                            DuraLite spacers use a unique no-metal design with a structural composite laminate 
+                            and a desiccant-filled hollow core. This advanced construction eliminates the thermal 
+                            bridge found in traditional metal spacers, significantly improving the window's overall 
+                            energy efficiency.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            The flexible nature of the DuraLite spacer system also accommodates natural expansion 
+                            and contraction of the glass, reducing stress and ensuring long-term durability of the 
+                            glass seal.
+                        </p>
+                        <a href="energy-ratings.html" class="btn btn-default">View Energy Ratings</a>
+                    </div>
+                    <div class="bg-gray-200 rounded-lg overflow-hidden p-8 flex items-center justify-center shadow-md">
+                        <img src="https://via.placeholder.com/400x300.png?text=DuraLite+Spacer+Cross-Section" alt="DuraLite Spacer Cross-Section Diagram" class="object-contain max-h-full max-w-full rounded">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-light-gray">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-dark-blue mb-4 text-center">Benefits of DuraLite Spacers</h2>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">Our revolutionary spacer technology provides multiple advantages over traditional systems.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center transition-transform hover:-translate-y-1"><div class="text-4xl mb-4">❄️</div><h3 class="text-xl font-bold text-dark-blue mb-2">Superior Thermal Performance</h3><p class="text-gray-700">Reduces edge-of-glass heat loss by up to 65% compared to aluminum spacers.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center transition-transform hover:-translate-y-1"><div class="text-4xl mb-4">💧</div><h3 class="text-xl font-bold text-dark-blue mb-2">Condensation Resistance</h3><p class="text-gray-700">Warmer glass edge temperatures virtually eliminate condensation in normal conditions.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center transition-transform hover:-translate-y-1"><div class="text-4xl mb-4">⏱️</div><h3 class="text-xl font-bold text-dark-blue mb-2">Extended Window Life</h3><p class="text-gray-700">Flexible design accommodates thermal movement, ensuring long-term seal integrity.</p></div>
+                    <div class="bg-white rounded-lg shadow-md p-6 text-center transition-transform hover:-translate-y-1"><div class="text-4xl mb-4">🔍</div><h3 class="text-xl font-bold text-dark-blue mb-2">Improved Appearance</h3><p class="text-gray-700">Low-profile design and matte black finish create a clean, aesthetically pleasing look.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-dark-blue mb-4 text-center">How DuraLite Spacers Work</h2>
+                <p class="text-lg text-gray-700 mb-12 text-center max-w-3xl mx-auto">Our advanced spacer system uses innovative materials and design to outperform traditional spacers.</p>
+                <div class="text-center mb-12">
+                    <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center mx-auto max-w-3xl shadow-md">
+                         <img src="https://via.placeholder.com/600x250.png?text=DuraLite+Technology+Diagram" alt="DuraLite Spacer Technology Diagram" class="object-contain max-h-full max-w-full rounded">
+                    </div>
+                    <p class="mt-6 text-gray-700 max-w-3xl mx-auto">
+                        The DuraLite system replaces traditional aluminum with a composite material structure that 
+                        significantly reduces thermal conductivity. The spacer's hollow core contains desiccant 
+                        materials that absorb moisture from within the sealed glass unit, preventing fog and 
+                        condensation. The flexible nature of the composite material allows for expansion and 
+                        contraction with temperature changes, maintaining the integrity of the seal and extending 
+                        the lifespan of the window unit.
+                    </p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-12">
+                    <div class="text-center"><div class="text-4xl font-bold text-energy-green mb-2">65%</div><p class="text-gray-700">Edge Heat Loss Reduction</p></div>
+                    <div class="text-center"><div class="text-4xl font-bold text-energy-green mb-2">18°F</div><p class="text-gray-700">Warmer Edge Temperature</p></div>
+                    <div class="text-center"><div class="text-4xl font-bold text-energy-green mb-2">30%</div><p class="text-gray-700">Longer Seal Lifespan</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-minmar-blue text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Experience the DuraLite Difference</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto text-gray-200">Upgrade to Minmar windows with DuraLite spacer technology for superior energy efficiency and durability.</p>
+                <a href="get-a-quote.html" class="btn bg-white text-minmar-blue hover:bg-light-blue">Get a Free Quote</a>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

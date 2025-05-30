@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4 bg-light-gray">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-500 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-gray-700">Resources</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-dark-blue">Resource Library</h1>
+                <p class="page-banner-description text-gray-700">Access our comprehensive collection of guides, documents, and videos to help with your window and door projects</p>
+            </div>
+        </div>
+
+        <!-- Resource Filters -->
+        <section class="py-8 bg-white border-b border-gray-200">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-minmar-blue text-white">All Resources</button>
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-gray-300 text-gray-700 hover:border-minmar-blue">Technical Documents</button>
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-gray-300 text-gray-700 hover:border-minmar-blue">Installation Guides</button>
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-gray-300 text-gray-700 hover:border-minmar-blue">Product Catalogs</button>
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-gray-300 text-gray-700 hover:border-minmar-blue">Videos</button>
+                    <button class="px-5 py-2 rounded-full text-sm font-medium transition-colors bg-white border border-gray-300 text-gray-700 hover:border-minmar-blue">Case Studies</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resource Grid -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-dark-blue mb-8">Popular Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Window Installation Guide -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1572978122964-430fc127139e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Installation Guide</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Window Installation Guide</h3>
+                            <p class="text-gray-700 mb-4">Step-by-step instructions for proper installation of Minmar windows in various applications.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Download PDF</a>
+                                <span class="text-sm text-gray-500">5.2 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2023 Window Collection -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1606836576983-8b458e75221d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Product Catalog</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">2023 Window Collection</h3>
+                            <p class="text-gray-700 mb-4">Browse our complete line of window products with specifications and available options.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Download PDF</a>
+                                <span class="text-sm text-gray-500">8.7 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Energy Efficiency Ratings -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Technical Document</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Energy Efficiency Ratings</h3>
+                            <p class="text-gray-700 mb-4">Detailed technical specifications and energy performance ratings for all Minmar products.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Download PDF</a>
+                                <span class="text-sm text-gray-500">3.1 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- How to Measure for Replacement Windows -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1589939705384-5185137a7f0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Video</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">How to Measure for Replacement Windows</h3>
+                            <p class="text-gray-700 mb-4">Video guide for accurately measuring your existing windows for replacements.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Watch Video</a>
+                                <span class="text-sm text-gray-500">6:45</span>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Oceanfront Home Renovation -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1527030280862-64139fba04ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Case Study</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Oceanfront Home Renovation</h3>
+                            <p class="text-gray-700 mb-4">Learn how Minmar windows withstand harsh coastal conditions in this luxury home renovation.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                                <span class="text-sm text-gray-500">5 min read</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Window Care & Maintenance -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-transform hover:-translate-y-1">
+                        <div class="h-48 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1581337043305-005cf385c7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80')"></div>
+                        <div class="p-6">
+                            <span class="inline-block px-3 py-1 bg-light-blue text-minmar-blue text-xs font-medium rounded mb-3">Maintenance Guide</span>
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Window Care & Maintenance</h3>
+                            <p class="text-gray-700 mb-4">Tips and instructions for proper cleaning and maintenance of your Minmar windows.</p>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="btn btn-outline btn-sm">Download PDF</a>
+                                <span class="text-sm text-gray-500">2.3 MB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Resource -->
+        <section class="py-16 bg-light-gray">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Featured Resource</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">2023 Energy Efficiency Guide</h3>
+                        <p class="text-gray-700 mb-4">Our comprehensive guide to understanding window and door energy efficiency ratings, tax credits, and selecting the right products for your climate zone.</p>
+                        <p class="text-gray-700 mb-2">This guide covers:</p>
+                        <ul class="list-disc ml-6 mb-6 text-gray-700">
+                            <li>Understanding ENERGY STAR® ratings</li>
+                            <li>U-factor, SHGC, and VT measurements explained</li>
+                            <li>Regional recommendations for optimal performance</li>
+                            <li>Available federal and state tax incentives</li>
+                            <li>Return on investment calculators</li>
+                        </ul>
+                        <a href="#" class="btn btn-default">Download Guide</a>
+                    </div>
+                    <div class="rounded-lg overflow-hidden h-80 bg-gray-300 flex items-center justify-center">
+                        <img src="https://via.placeholder.com/400x320.png?text=Featured+Guide+Cover" alt="Featured Guide Cover" class="object-cover w-full h-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="py-12 bg-minmar-blue text-white text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-4">Stay Updated</h2>
+                <p class="text-lg mb-8 text-gray-200">Subscribe to our newsletter to receive the latest resources, product updates, and industry news</p>
+                <form class="max-w-md mx-auto flex">
+                    <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 rounded-l-md focus:outline-none text-gray-800" />
+                    <button type="submit" class="btn btn-default bg-dark-blue px-6 py-3 rounded-r-md font-semibold hover:bg-opacity-90 transition-colors">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

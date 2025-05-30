@@ -1,0 +1,28 @@
+/* Custom reset to fix generated CSS issues */
+
+/* Fix for appearance property in buttons */
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/* Fix for vertical-align in block elements */
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  display: inline-block; /* Changed from block to inline-block */
+}
+
+/* Ensure iframes are responsive */
+iframe {
+  max-width: 100%;
+  border: 0;
+}

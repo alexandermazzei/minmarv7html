@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1481277542470-605612bd2d61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="windows.html" class="text-gray-300 hover:underline">Windows</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Specialty Windows</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Specialty Windows</h1>
+                <p class="page-banner-description text-gray-200">Custom windows in unique shapes to accent your home's architecture</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Custom Architectural Windows</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Add visual interest and personality to your home with Minmar specialty windows. Available 
+                            in a wide range of custom shapes and sizes, our specialty windows can be used as standalone 
+                            design features or combined with other window styles to create truly distinctive looks.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Each specialty window is custom-crafted with the same premium materials and attention to 
+                            detail as our standard windows, ensuring exceptional energy efficiency, durability, and 
+                            long-term performance. Our design consultants can help you select the perfect specialty 
+                            windows to complement your home's architectural style.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="get-a-quote.html" class="btn btn-default">Get a Quote</a>
+                            <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
+                        <img src="images/special.jpg" alt="Specialty Windows collage" class="object-contain h-full w-auto rounded-lg">
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Popular Shapes</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                    <!-- Circle -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-32 h-32 rounded-full border-4 border-minmar-blue bg-white"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Circle</h3><p class="text-sm text-gray-700">Perfect architectural accent for entryways and gables</p></div>
+                    </div>
+                    <!-- Half Circle -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-32 h-16 rounded-t-full border-4 border-minmar-blue border-b-0 bg-white"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Half Circle</h3><p class="text-sm text-gray-700">Classic arch design, ideal for topping doors and windows</p></div>
+                    </div>
+                    <!-- Diamond -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-24 h-24 border-4 border-minmar-blue transform rotate-45 bg-white"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Diamond</h3><p class="text-sm text-gray-700">Distinctive shape for unique architectural statements</p></div>
+                    </div>
+                     <!-- Quarter Round -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4">
+                            <div class="w-32 h-32 border-4 border-minmar-blue bg-white" style="clip-path: polygon(0 0, 100% 0, 100% 100%); border-radius: 100% 0 0 0 / 100% 0 0 0;"></div>
+                        </div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Quarter Round</h3><p class="text-sm text-gray-700">Perfect for corner installations and tight spaces</p></div>
+                    </div>
+                    <!-- Octagon -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-32 h-32 border-4 border-minmar-blue bg-white" style="clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%)"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Octagon</h3><p class="text-sm text-gray-700">Dramatic accent for traditional and Victorian homes</p></div>
+                    </div>
+                    <!-- Trapezoid -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-40 h-24 border-4 border-minmar-blue bg-white" style="clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Trapezoid</h3><p class="text-sm text-gray-700">Ideal for sloped rooflines and contemporary designs</p></div>
+                    </div>
+                    <!-- Pentagon -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-32 h-32 border-4 border-minmar-blue bg-white" style="clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"></div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Pentagon</h3><p class="text-sm text-gray-700">Distinctive look for gables and architectural features</p></div>
+                    </div>
+                    <!-- Custom -->
+                    <div class="border border-light-gray rounded-lg overflow-hidden text-center bg-white">
+                        <div class="h-48 bg-gray-200 flex items-center justify-center p-4"><div class="w-32 h-32 border-4 border-dashed border-minmar-blue flex items-center justify-center text-minmar-blue font-bold">ANY SHAPE</div></div>
+                        <div class="p-4"><h3 class="font-bold text-dark-blue">Custom</h3><p class="text-sm text-gray-700">Virtually any shape imaginable for your unique project</p></div>
+                    </div>
+                </div>
+
+                <div class="bg-light-gray rounded-lg p-8 mb-16">
+                    <div class="flex flex-col lg:flex-row gap-8 items-center">
+                        <div class="lg:w-2/5">
+                            <h2 class="text-3xl font-bold text-dark-blue mb-4">Design Applications</h2>
+                            <p class="text-gray-700 mb-6">Specialty windows can be used in countless ways to enhance your home's appearance and functionality. Here are some popular applications to inspire your next window project.</p>
+                            <a href="try-visualizer.html" class="btn btn-default">Try Our Window Visualizer</a>
+                        </div>
+                        <div class="lg:w-3/5 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-3">Transom Windows</h3><p class="text-gray-700 mb-3">Half-round or elliptical windows installed above doors or other windows to add height, light, and architectural interest.</p><div class="h-32 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-sm text-gray-500">Transom Windows Image</span></div></div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-3">Gable Windows</h3><p class="text-gray-700 mb-3">Triangle, trapezoid, or pentagon windows that follow the roofline to fill gable ends with natural light.</p><div class="h-32 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-sm text-gray-500">Gable Windows Image</span></div></div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-3">Accent Windows</h3><p class="text-gray-700 mb-3">Small circular, diamond, or custom-shaped windows used as decorative elements to enhance curb appeal.</p><div class="h-32 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-sm text-gray-500">Accent Windows Image</span></div></div>
+                            <div class="bg-white p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-3">Window Combinations</h3><p class="text-gray-700 mb-3">Specialty windows paired with traditional window styles to create unique, custom window arrangements.</p><div class="h-32 bg-gray-200 rounded-lg flex items-center justify-center"><span class="text-sm text-gray-500">Window Combinations Image</span></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Features & Options</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="border border-light-gray rounded-lg p-6 bg-white"><h3 class="text-xl font-bold text-dark-blue mb-4">Construction Options</h3><ul class="space-y-3 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Premium Vinyl:</span><span> Energy-efficient, maintenance-free</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Wood Clad:</span><span> Natural wood interior with weather-resistant exterior</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Aluminum:</span><span> Strong, durable frames for modern designs</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Composite:</span><span> Fiberglass-reinforced for extra durability</span></div></li></ul></div>
+                    <div class="border border-light-gray rounded-lg p-6 bg-white"><h3 class="text-xl font-bold text-dark-blue mb-4">Glass Options</h3><ul class="space-y-3 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Standard Clear:</span><span> Basic double-pane insulated glass</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Low-E Glass:</span><span> Enhanced energy efficiency</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">UltraFlect Dual:</span><span> Advanced thermal performance</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Decorative Glass:</span><span> Patterned, frosted, stained, or etched</span></div></li></ul></div>
+                    <div class="border border-light-gray rounded-lg p-6 bg-white"><h3 class="text-xl font-bold text-dark-blue mb-4">Customization</h3><ul class="space-y-3 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Color Options:</span><span> Available in our full range of colors</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Grille Patterns:</span><span> Custom grille designs available</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Custom Sizing:</span><span> Built to your exact specifications</span></div></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><div><span class="font-semibold">Installation Method:</span><span> New construction or replacement options</span></div></li></ul></div>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Design Process</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center"><div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">1</div><h3 class="text-lg font-bold text-dark-blue mb-2">Consultation</h3><p class="text-gray-700 text-sm">Meet with a design expert to discuss your vision, architectural style, and project requirements.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center"><div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">2</div><h3 class="text-lg font-bold text-dark-blue mb-2">Design</h3><p class="text-gray-700 text-sm">Our team creates detailed design proposals with shape, size, and placement recommendations.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center"><div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">3</div><h3 class="text-lg font-bold text-dark-blue mb-2">Fabrication</h3><p class="text-gray-700 text-sm">Your custom specialty windows are precision-manufactured to your exact specifications.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm text-center"><div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">4</div><h3 class="text-lg font-bold text-dark-blue mb-2">Installation</h3><p class="text-gray-700 text-sm">Professional installation by certified technicians ensures optimal performance and aesthetics.</p></div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Create Your Signature Look</h2>
+                    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">Ready to enhance your home with custom specialty windows? Contact us today to schedule a consultation with one of our window design experts.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="get-a-quote.html" class="btn btn-default">Get a Free Quote</a>
+                        <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

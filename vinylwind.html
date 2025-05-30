@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1506252374453-ef5237291d83?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="windows.html" class="text-gray-300 hover:underline">Windows</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Vinyl Windows</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Vinyl Windows</h1>
+                <p class="page-banner-description text-gray-200">Premium vinyl windows for energy efficiency, durability, and low maintenance</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Why Choose Vinyl Windows?</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Minmar vinyl windows combine exceptional energy efficiency, durability, and low maintenance 
+                            to deliver lasting performance and value. Our premium vinyl formulation resists fading, 
+                            chipping, peeling, and warping, maintaining its appearance and functionality for decades 
+                            with minimal care.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Unlike aluminum windows that conduct heat and cold or wood windows that require regular 
+                            painting and maintenance, vinyl windows provide superior thermal performance and can withstand 
+                            harsh weather conditions year after year without deteriorating. They're also environmentally 
+                            friendly and fully recyclable.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="get-a-quote.html" class="btn btn-default">Get a Quote</a>
+                            <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                        </div>
+                    </div>
+                    <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center shadow-md">
+                        <img src="images/vinylwindow_main.jpg" alt="Minmar Vinyl Windows" class="object-contain h-full w-auto rounded-lg"> <!-- Replace with a specific vinyl window image if available -->
+                    </div>
+                </div>
+
+                <div class="bg-light-blue rounded-lg p-8 mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">The Minmar Vinyl Advantage</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🏆</div><h3 class="text-xl font-bold text-dark-blue mb-2">Premium Vinyl Formulation</h3><p class="text-gray-700">Our proprietary vinyl compound contains UV stabilizers, impact modifiers, and titanium dioxide for superior durability, color retention, and resistance to yellowing and brittleness.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🔄</div><h3 class="text-xl font-bold text-dark-blue mb-2">Multi-Chamber Design</h3><p class="text-gray-700">Our frames and sashes feature multiple internal chambers that create insulating air pockets, reinforcing the structure while maximizing thermal efficiency.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🔨</div><h3 class="text-xl font-bold text-dark-blue mb-2">Fusion-Welded Corners</h3><p class="text-gray-700">Heat-welded corner joints create a seamless, airtight seal that can't be matched by mechanically fastened windows, preventing air and water infiltration.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🛡️</div><h3 class="text-xl font-bold text-dark-blue mb-2">Internal Reinforcement</h3><p class="text-gray-700">Strategic reinforcement with aluminum or composite materials in high-stress areas provides additional strength without compromising thermal performance.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🔎</div><h3 class="text-xl font-bold text-dark-blue mb-2">Precision Engineering</h3><p class="text-gray-700">Computer-controlled manufacturing ensures every window meets our exacting standards for perfect fit, smooth operation, and optimal performance.</p></div>
+                        <div class="bg-white p-6 rounded-lg shadow-sm"><div class="w-12 h-12 bg-minmar-blue rounded-full flex items-center justify-center text-white text-xl mb-4">🌿</div><h3 class="text-xl font-bold text-dark-blue mb-2">Eco-Friendly</h3><p class="text-gray-700">Our manufacturing process minimizes waste and energy consumption, and our vinyl windows are 100% recyclable at the end of their long service life.</p></div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Key Benefits</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1531835551805-16d864c8d311?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Energy Efficiency" class="rounded-lg mb-6 h-64 w-full object-cover shadow-md"/>
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">Energy Efficiency</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Naturally insulating vinyl material reduces heat transfer</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Multi-chamber frame design creates additional thermal barriers</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Precision-engineered weatherstripping prevents air leakage</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Compatible with all our high-performance glass options</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Helps lower heating and cooling costs year-round</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1587582423116-ec7ded621097?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Durability and Maintenance" class="rounded-lg mb-6 h-64 w-full object-cover shadow-md"/>
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">Durability and Maintenance</h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Never needs painting, staining, or refinishing</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Resists rot, corrosion, pitting, and insect damage</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Won't warp, crack, or swell with moisture</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Easy to clean with just soap and water</span></li>
+                            <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Color goes throughout the material, not just surface</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-light-gray p-8 rounded-lg mb-16">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="md:w-1/2">
+                            <h3 class="text-2xl font-bold text-dark-blue mb-4">Available in All Window Styles</h3>
+                            <p class="text-gray-700 mb-6">Our premium vinyl construction is available in every window style we offer, allowing you to outfit your entire home with beautiful, energy-efficient windows that perfectly match your architectural style and functional needs.</p>
+                        </div>
+                        <div class="md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Double Hung</h4><a href="doublehung.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Casement</h4><a href="casementwindows.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Slider</h4><a href="slider.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Picture</h4><a href="picturewindows.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Bay & Bow</h4><a href="bowwindows.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center"><h4 class="font-semibold text-dark-blue">Specialty</h4><a href="specialty.html" class="text-minmar-blue text-sm hover:underline">View Details</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">Available Colors</h2>
+                <div class="flex flex-wrap justify-center gap-6 mb-16">
+                    <div class="text-center"><div class="w-24 h-24 bg-white border border-gray-300 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">White</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-gray-200 border border-gray-300 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Almond</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-gray-300 border border-gray-400 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Clay</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-neutral-700 border border-gray-500 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Bronze</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-gray-700 border border-gray-600 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Anthracite Gray</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-green-900 border border-green-950 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Hunter Green</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-blue-900 border border-blue-950 rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Navy Blue</span></div>
+                    <div class="text-center"><div class="w-24 h-24 bg-neutral-900 border border-black rounded-lg mx-auto mb-2 shadow"></div><span class="font-semibold text-gray-700">Black</span></div>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Experience the Vinyl Difference</h2>
+                    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">Ready to enjoy the beauty, performance, and low maintenance of premium vinyl windows? Contact us today to request a quote or learn more about our vinyl window options.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="get-a-quote.html" class="btn btn-default">Get a Free Quote</a>
+                        <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Fixes for generated CSS linting issues */
+
+/* Fix appearance property */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/* Fix vertical-align with display: block */
+img,
+svg,
+video,
+canvas {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Ensure iframes are responsive */
+iframe {
+  max-width: 100%;
+  border: 0;
+}

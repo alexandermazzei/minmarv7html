@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center h-[90vh] relative" style="background-image: url('images/backhome.jpg')">
+            <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-black/50"></div>
+            <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                <div class="max-w-3xl text-white">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style="color: #78afff;">
+                        Tired of Sky-High Energy Bills & Uncomfortable Rooms?
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6">
+                        Discover Minmar's Revolutionary Energy-Saving Window & Door System That Delivers Year-Round Comfort & Cuts Your Bills Dramatically.
+                    </h2>
+                    <p class="text-xl mb-6">
+                        Minmar Offers Homeowners in the Northeast a Complete Home Comfort & Energy Independence Package So Valuable, You'll Wonder Why You Didn't Do This Sooner.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                        <a href="get-a-quote.html" class="btn btn-lg bg-[#003B70] text-white border-[#003B70] hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">
+                            Book My FREE Home Assessment
+                        </a>
+                        <a href="explore-products.html" class="btn btn-lg btn-secondary text-[#003B70] hover:text-[#003B70]" style="color: #003B70 !important;">
+                            Explore Products
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Promise/Offer Section -->
+        <section class="py-16 bg-light-gray">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                    <p class="text-xl text-gray-700 mb-8">
+                        If inconsistent temperatures, annoying drafts, and ever-increasing energy bills are making your home less enjoyable and costing you a fortune, you understand the frustration. You shouldn't have to choose between comfort and an affordable energy bill.
+                    </p>
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Introducing: The Minmar Complete Home Comfort & Energy Independence Package</h2>
+                    <p class="text-lg text-gray-600">
+                        This isn't just a collection of windows and doors; it's a comprehensive system engineered to deliver lasting comfort, significant energy savings, and peace of mind. We've stacked everything you need into one incredible offer designed to give you a win-win.
+                    </p>
+                </div>
+                
+                <!-- Value Stack -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3 text-center">Precision 'Done-For-You' Installation Service</h3>
+                        <p class="text-gray-600">
+                            Our certified experts handle the entire installation process flawlessly, ensuring maximum energy performance and a hassle-free experience for you. This significantly decreases your effort and sacrifice.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3 text-center">Whisper-Quiet, Draft-Proof Window & Door Collection</h3>
+                        <p class="text-gray-600">
+                            Select from our premium, energy-efficient vinyl windows and doors designed to create a thermal barrier, block distracting outside noise, and eliminate uncomfortable drafts.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="w-16 h-16 bg-minmar-blue rounded-full flex items-center justify-center text-white text-2xl mb-4 mx-auto">
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3 text-center">Lifetime 'Peace of Mind' Warranty</h3>
+                        <p class="text-gray-600">
+                            Your investment is protected for life against manufacturing defects, giving you long-term confidence and security. This increases the perceived likelihood of achievement and reduces risk.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Bonus Section -->
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-2xl font-bold text-dark-blue text-center mb-6">Exclusive Bonuses Included:</h3>
+                    <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <div class="bg-minmar-blue text-white text-lg font-bold py-2 px-4 rounded-lg inline-block mb-3">
+                                    Bonus #1
+                                </div>
+                                <h4 class="text-xl font-bold text-dark-blue mb-2">Your Personalized Home Energy Savings Report</h4>
+                                <p class="text-gray-600">
+                                    Receive a detailed, custom analysis outlining exactly how much you could save on heating and cooling costs annually by upgrading to Minmar's system.
+                                </p>
+                                <p class="text-minmar-blue font-semibold mt-2">
+                                    Value: Potentially thousands saved annually!
+                                </p>
+                            </div>
+                            <div class="flex-1">
+                                <div class="bg-minmar-blue text-white text-lg font-bold py-2 px-4 rounded-lg inline-block mb-3">
+                                    Bonus #2
+                                </div>
+                                <h4 class="text-xl font-bold text-dark-blue mb-2">The Homeowner's Essential Window Care & Efficiency Checklist</h4>
+                                <p class="text-gray-600">
+                                    Get our easy-to-follow checklist to ensure your new windows perform optimally for decades and you're maximizing your energy savings.
+                                </p>
+                                <p class="text-minmar-blue font-semibold mt-2">
+                                    Value: Priceless convenience!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="bg-minmar-blue text-white text-lg font-bold py-2 px-4 rounded-lg inline-block mb-3">
+                                Bonus #3
+                            </div>
+                            <h4 class="text-xl font-bold text-dark-blue mb-2">Minmar's 'Comfort & Savings' Performance Guarantee</h4>
+                            <p class="text-gray-600">
+                                We're so confident in the results, we guarantee you'll experience a noticeable improvement in home comfort and see potential for significant energy savings after installation. If not, we'll reassess your installation at no cost and make any necessary adjustments to ensure your complete satisfaction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action - Lead Magnet -->
+        <section class="py-16 bg-minmar-blue text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Ready to Slash Your Energy Bills & Enjoy Perfect Home Comfort?</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    Claim Your FREE, No-Obligation Home Energy Savings & Comfort Assessment & Custom Report Today!
+                </p>
+                <div class="max-w-3xl mx-auto bg-white text-dark-blue p-8 rounded-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-4">During this assessment, a Minmar expert will:</h3>
+                    <ul class="text-left space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <span class="text-minmar-blue mr-2 text-2xl">•</span>
+                            <span>Identify areas of energy loss in your home.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-minmar-blue mr-2 text-2xl">•</span>
+                            <span>Calculate your potential energy savings with new windows & doors.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-minmar-blue mr-2 text-2xl">•</span>
+                            <span>Provide your personalized savings report and recommendations.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-minmar-blue mr-2 text-2xl">•</span>
+                            <span>Answer all your questions about the process.</span>
+                        </li>
+                    </ul>
+                    <p class="font-bold text-lg mb-6">Limited Assessment Spots Available This Month!</p>
+                    <a href="get-a-quote.html" class="btn btn-lg bg-[#003B70] text-white border-[#003B70] hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">
+                        Book My FREE Home Assessment & Get My Custom Report Now!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">See the Minmar Difference - Results Our Customers Rave About</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        On average, our customers report reducing their energy consumption by 30% after installing Minmar windows and doors.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex-1">
+                            <div class="text-minmar-blue mb-4">
+                                <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 italic">"Minmar's windows changed everything! Our home is finally comfortable year-round, and our energy bills dropped significantly. We're saving over $200 every month during winter!"</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark-blue">Sarah T., Homeowner</p>
+                            <p class="text-gray-500 text-sm">Boston, MA</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex-1">
+                            <div class="text-minmar-blue mb-4">
+                                <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 italic">"The installation was seamless and professional. Minmar made the whole process easy from start to finish. No more drafts, and our heating system barely runs now. Highly recommend!"</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark-blue">Michael R., Homeowner</p>
+                            <p class="text-gray-500 text-sm">Philadelphia, PA</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <div class="flex-1">
+                            <div class="text-minmar-blue mb-4">
+                                <span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span><span class="text-xl">★</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 italic">"After getting our energy assessment, we were shocked at how much we could save. The results have exceeded our expectations - quieter home, no more cold spots, and lower bills."</p>
+                        </div>
+                        <div>
+                            <p class="font-semibold text-dark-blue">Jennifer L., Homeowner</p>
+                            <p class="text-gray-500 text-sm">Hartford, CT</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works - Reframed Features -->
+        <section class="py-16 bg-light-gray">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Engineered for Maximum Comfort & Savings - The Minmar Advantage</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Our windows and doors are designed with advanced technology to ensure superior energy efficiency and lasting performance. Here's how they deliver the results you want:
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Advanced Low-E Glass Coatings</h3>
+                        <p class="text-gray-600">
+                            These specialized coatings reflect heat, keeping warmth inside during the winter and outside during the summer. The result? More consistent indoor temperatures and lower energy bills.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Insulated Multi-Chamber Frames</h3>
+                        <p class="text-gray-600">
+                            Multiple insulating air pockets within the frame structure create a powerful thermal barrier, stopping heat transfer and preventing drafts.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Warm-Edge Spacer Technology</h3>
+                        <p class="text-gray-600">
+                            This innovative design minimizes heat transfer at the edge of the glass panes, reducing condensation and further enhancing insulation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Window Types Section -->
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Choose the Perfect Style to Enhance Your Home's Beauty & Value</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                        Our range offers diverse options to complement any home's architecture while providing industry-leading energy efficiency and durability.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Window Type 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-lg">
+                        <div class="h-52 bg-cover bg-center" style="background-image: url('images/Double-HungWindows2.png')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Double Hung Windows</h3>
+                            <p class="text-gray-600 mb-4">Classic design with versatile ventilation options and easy cleaning.</p>
+                            <a href="doublehung.html" class="btn btn-outline w-full">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Window Type 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-lg">
+                        <div class="h-52 bg-cover bg-center" style="background-image: url('images/casementwindows.jpg')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Casement Windows</h3>
+                            <p class="text-gray-600 mb-4">Offer expansive views and maximize airflow when open.</p>
+                            <a href="casementwindows.html" class="btn btn-outline w-full">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Window Type 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-lg">
+                        <div class="h-52 bg-cover bg-center" style="background-image: url('images/sliders.jpg')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Slider Windows</h3>
+                            <p class="text-gray-600 mb-4">Ideal for spaces where vertical opening is limited, providing smooth horizontal operation.</p>
+                            <a href="slider.html" class="btn btn-outline w-full">Learn More</a>
+                        </div>
+                    </div>
+                    <!-- Window Type 4 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-1 hover:shadow-lg">
+                        <div class="h-52 bg-cover bg-center" style="background-image: url('images/special.jpg')"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-2">Specialty Windows</h3>
+                            <p class="text-gray-600 mb-4">Custom shapes and sizes to add unique architectural elements and natural light.</p>
+                            <a href="specialty.html" class="btn btn-outline w-full">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="windows.html" class="btn btn-lg bg-[#003B70] text-white border-[#003B70] hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">View All Styles & Options</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Final Call to Action -->
+        <section class="py-12 bg-minmar-blue text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-4">Take The First Step Toward Energy Savings & Comfort</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    Don't miss this opportunity to transform your home into a more comfortable and energy-efficient space.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl mx-auto">
+        <a href="get-a-quote.html" class="flex-1 flex items-center justify-center px-6 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-blue-700 hover:bg-blue-800 hover:text-white">
+            Get Your Free Quote
+            <svg class="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+        </a>
+        <a href="explore-products.html" class="flex-1 flex items-center justify-center px-6 py-4 border border-transparent text-lg font-medium rounded-md text-[#003B70] bg-white hover:bg-gray-100 hover:text-[#003B70] transition-all duration-200 transform hover:scale-105 shadow-md text-[#003B70] hover:text-[#003B70]" style="color: #003B70 !important;">
+            View Our Products
+            <svg class="ml-2 -mr-1 w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z" clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
+</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

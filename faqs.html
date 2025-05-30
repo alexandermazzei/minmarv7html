@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="support.html" class="text-gray-300 hover:underline">Support</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">FAQs</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Frequently Asked Questions</h1>
+                <p class="page-banner-description text-gray-200">Find answers to your questions about our products, installation, warranties, and more</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Common Questions & Answers</h2>
+                    <p class="text-lg text-gray-700">
+                        Find answers to frequently asked questions about Minmar windows and doors, 
+                        installation, energy efficiency, warranties, and more. If you don't see the 
+                        information you're looking for, please contact our customer service team.
+                    </p>
+                </div>
+              
+                <div class="mb-16">
+                    <div class="flex flex-wrap mb-8 justify-center">
+                        <a href="#products-faqs" class="px-5 py-2 bg-light-blue rounded-full text-dark-blue font-medium mr-3 mb-3 hover:bg-minmar-blue hover:text-white transition-colors">Products</a>
+                        <a href="#installation-faqs" class="px-5 py-2 bg-light-blue rounded-full text-dark-blue font-medium mr-3 mb-3 hover:bg-minmar-blue hover:text-white transition-colors">Installation & Measurement</a>
+                        <a href="#warranties-faqs" class="px-5 py-2 bg-light-blue rounded-full text-dark-blue font-medium mr-3 mb-3 hover:bg-minmar-blue hover:text-white transition-colors">Warranties & Service</a>
+                        <a href="#energy-faqs" class="px-5 py-2 bg-light-blue rounded-full text-dark-blue font-medium mr-3 mb-3 hover:bg-minmar-blue hover:text-white transition-colors">Energy Efficiency</a>
+                    </div>
+                    
+                    <!-- Products FAQs -->
+                    <div id="products-faqs" class="mb-12">
+                        <h2 class="text-2xl font-bold text-dark-blue mb-6 flex items-center">Products<div class="h-1 bg-minmar-blue ml-4 flex-grow"></div></h2>
+                        <div class="space-y-8">
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">What types of windows does Minmar offer?</h3><p class="text-gray-700">Minmar offers a complete line of premium vinyl windows including double hung, casement, slider, picture, bow, bay, and specialty shapes. Each style is available in multiple series to meet different performance needs and budgets.</p></div>
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">Are Minmar windows energy efficient?</h3><p class="text-gray-700">Yes, all Minmar windows are ENERGY STAR® certified and feature advanced energy-saving technologies such as Low-E glass, insulated frames, and warm-edge spacers. Our premium windows achieve U-Factors as low as 0.25, exceeding ENERGY STAR® requirements in all climate zones.</p></div>
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">What materials are used in Minmar windows and doors?</h3><p class="text-gray-700">Minmar windows feature premium vinyl frames that are durable, low-maintenance, and excellent insulators. Our doors are available in fiberglass, steel, and vinyl options, each engineered for optimal performance and longevity.</p></div>
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">Can I customize the color and style of my windows and doors?</h3><p class="text-gray-700">Absolutely! Minmar offers a wide range of customization options including exterior and interior color choices, decorative glass designs, grille patterns, hardware finishes, and more. Visit our <a href="window-options.html" class="text-minmar-blue hover:underline">Window Options</a> page for complete details.</p></div>
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">What is the difference between the various window series?</h3><p class="text-gray-700">Minmar offers multiple series (9000, 8000, and 7000) that vary in terms of glass packages, frame design, hardware options, and energy performance. Higher series numbers generally indicate enhanced features and improved energy efficiency.</p></div>
+                        </div>
+                    </div>
+                    <!-- Installation & Measurement FAQs (Repeat structure for other categories) -->
+                    <div id="installation-faqs" class="mb-12">
+                        <h2 class="text-2xl font-bold text-dark-blue mb-6 flex items-center">Installation & Measurement<div class="h-1 bg-minmar-blue ml-4 flex-grow"></div></h2>
+                        <div class="space-y-8">
+                             <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">Does Minmar provide installation services?</h3><p class="text-gray-700">Minmar partners with a network of certified independent dealers who provide professional installation services. We can connect you with an authorized dealer in your area who has been trained in proper installation techniques.</p></div>
+                             <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">How long does window installation typically take?</h3><p class="text-gray-700">The installation time varies depending on the number and type of windows being installed, but typically replacement windows can be installed in one to two days for an average home. Your installer will provide a more specific timeline based on your project.</p></div>
+                        </div>
+                    </div>
+                     <!-- Warranties & Service FAQs -->
+                    <div id="warranties-faqs" class="mb-12">
+                        <h2 class="text-2xl font-bold text-dark-blue mb-6 flex items-center">Warranties & Service<div class="h-1 bg-minmar-blue ml-4 flex-grow"></div></h2>
+                        <div class="space-y-8">
+                            <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">What warranty does Minmar offer on windows and doors?</h3><p class="text-gray-700">Minmar offers a limited lifetime warranty on vinyl windows and patio doors, covering components such as frames, sashes, hardware, and insulated glass units. Entry doors come with a 10-year warranty. See our <a href="warranty-information.html" class="text-minmar-blue hover:underline">Warranty Information</a> page for complete details and limitations.</p></div>
+                        </div>
+                    </div>
+                    <!-- Energy Efficiency FAQs -->
+                     <div id="energy-faqs" class="mb-12">
+                        <h2 class="text-2xl font-bold text-dark-blue mb-6 flex items-center">Energy Efficiency<div class="h-1 bg-minmar-blue ml-4 flex-grow"></div></h2>
+                        <div class="space-y-8">
+                           <div class="bg-white rounded-lg shadow-md p-6 transition-all hover:shadow-lg"><h3 class="text-xl font-bold text-dark-blue mb-3">What does ENERGY STAR® certification mean?</h3><p class="text-gray-700">ENERGY STAR® is a government-backed program that certifies products meeting strict energy efficiency guidelines. Minmar windows that carry the ENERGY STAR® label have been independently tested and verified to meet or exceed these standards, helping you save energy and reduce utility bills.</p></div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="bg-light-blue p-8 rounded-lg mb-16">
+                    <h2 class="text-2xl font-bold text-dark-blue mb-6 text-center">Have Other Questions?</h2>
+                    <p class="text-center mb-8 max-w-2xl mx-auto text-gray-700">We're here to help! If you have questions that aren't answered above, please contact our customer service team or connect with a local dealer.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="contact-us.html" class="btn btn-default">Contact Customer Service</a>
+                        <a href="find-a-dealer.html" class="btn btn-outline">Find a Local Dealer</a>
+                    </div>
+                </div>
+              
+                <div class="mb-16">
+                    <h2 class="text-2xl font-bold text-dark-blue mb-6">Additional Questions</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">How do I find a Minmar dealer in my area?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">What is the difference between replacement and new construction windows?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">Can I install Minmar windows myself?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">How do double hung windows differ from casement windows?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">What financing options are available for window and door projects?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">Are Minmar windows available for commercial projects?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">How do I clean the exterior of second-story windows?</a></div>
+                        <div class="flex items-start"><svg class="w-5 h-5 text-minmar-blue mt-1 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg><a href="contact-us.html" class="text-gray-700 hover:text-minmar-blue">What security features do Minmar windows and doors offer?</a></div>
+                    </div>
+                </div>
+              
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Ready to Get Started?</h2>
+                    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">Contact us today to learn more about our products, schedule a consultation, or request a quote.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                        <a href="get-a-quote.html" class="btn btn-default">Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

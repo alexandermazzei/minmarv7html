@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1593195809468-5b3cc8f7891f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Energy Solutions</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Energy Solutions</h1>
+                <p class="page-banner-description text-gray-200">Innovative technologies for maximum energy efficiency and comfort</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Comprehensive Energy Efficiency</h2>
+                    <p class="text-lg text-gray-700">
+                        Minmar's approach to energy efficiency combines multiple innovative technologies that 
+                        work together as a complete system. From advanced glass coatings and insulated frames to 
+                        warm-edge spacers and precision weathersealing, every component is engineered to maximize 
+                        thermal performance while enhancing comfort and durability.
+                    </p>
+                </div>
+              
+                <!-- Glass Technologies -->
+                <div class="mb-16">
+                    <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="md:w-1/3">
+                            <div class="rounded-lg overflow-hidden shadow-md">
+                                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593195809342-4738a5be9117?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-bold text-dark-blue mb-3">Glass Technologies</h2>
+                            <p class="text-gray-700 mb-6">Advanced glass solutions that regulate temperature and block harmful UV rays.</p>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Low-E Glass</h3><a href="loweglass.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Microscopic metallic coating reflects infrared energy while allowing visible light to pass through.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">UltraFlect Dual Glass</h3><a href="ultraflectdualglass.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Double-pane insulated glass with argon gas fill and Low-E coating for superior performance.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">UltraFlect3 Triple Glass</h3><a href="ultraflect3triple.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Triple-pane configuration with two Low-E coatings and dual argon chambers for maximum efficiency.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frame Technologies -->
+                <div class="mb-16 bg-light-gray py-12 px-4 rounded-lg">
+                    <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                        <div class="md:w-1/3">
+                            <div class="rounded-lg overflow-hidden shadow-md">
+                                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1591117207239-788bf8de6c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-bold text-dark-blue mb-3">Frame Technologies</h2>
+                            <p class="text-gray-700 mb-6">Engineered frame designs that minimize thermal transfer and maximize insulation.</p>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Multi-Chamber Design</h3><a href="vinylwind.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Frame and sash profiles with multiple internal chambers that create insulating air pockets.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Thermal Reinforcement</h3><a href="vinylwind.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Fiberglass-enhanced vinyl frames that provide structural strength without compromising thermal performance.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Fusion-Welded Corners</h3><a href="vinylwind.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Heat-welded frame corners create an airtight seal that prevents heat loss and air infiltration.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spacer Technologies -->
+                <div class="mb-16">
+                     <div class="flex flex-col md:flex-row gap-8 items-center">
+                        <div class="md:w-1/3">
+                            <div class="rounded-lg overflow-hidden shadow-md">
+                                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1600573472550-8090b5e0745e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-bold text-dark-blue mb-3">Spacer Technologies</h2>
+                            <p class="text-gray-700 mb-6">Advanced systems that separate glass panes while minimizing heat transfer at the edge.</p>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">DuraLite Spacer System</h3><a href="duralitespacer.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Non-metal composite spacer that virtually eliminates thermal bridging at the glass edge.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Warm-Edge Technology</h3><a href="energy-solutions.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Specialized edge sealing system that reduces edge-of-glass heat loss and condensation.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Enhanced Desiccant</h3><a href="duralitespacer.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Moisture-absorbing materials within the spacer system that prevent fog and condensation between glass panes.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weathersealing Technologies -->
+                <div class="mb-16 bg-light-gray py-12 px-4 rounded-lg">
+                    <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+                        <div class="md:w-1/3">
+                            <div class="rounded-lg overflow-hidden shadow-md">
+                                <div class="h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1604709805848-e593355f5964?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')"></div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3">
+                            <h2 class="text-2xl font-bold text-dark-blue mb-3">Weathersealing Technologies</h2>
+                            <p class="text-gray-700 mb-6">Complete sealing systems that eliminate drafts and prevent air and water infiltration.</p>
+                            <div class="space-y-4">
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Triple Weatherstripping</h3><a href="windows.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Multiple weatherstripping barriers create an airtight seal between operating sash and frame.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Compression Seals</h3><a href="casementwindows.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Specially designed gaskets that compress when the window is closed for a complete weathertight seal.</p></div>
+                                <div class="bg-white p-4 rounded-lg shadow-sm"><div class="flex justify-between items-center"><h3 class="text-lg font-semibold text-dark-blue">Corner Seal Technology</h3><a href="windows.html" class="text-minmar-blue hover:text-dark-blue font-medium text-sm">Learn more →</a></div><p class="text-gray-700 text-sm mt-1">Enhanced sealing at window and door corners, traditionally the most vulnerable areas for air leakage.</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="bg-dark-blue text-white p-8 rounded-lg mb-16">
+                    <h2 class="text-2xl font-bold mb-6 text-center">Performance Comparison</h2>
+                    <p class="text-center mb-8 text-gray-300">See how Minmar's energy-efficient windows compare to standard industry performance.</p>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="border-b border-blue-700"><th class="p-3 text-left">Performance Metric</th><th class="p-3 text-left">What It Measures</th><th class="p-3 text-left">Industry Standard</th><th class="p-3 text-left">Minmar Performance</th><th class="p-3 text-left">Improvement</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-blue-700"><td class="p-3"><a href="energy-ratings.html" class="text-light-blue hover:text-white font-semibold">U-Factor</a></td><td class="p-3 text-sm text-gray-300">Measures how well a product prevents heat from escaping</td><td class="p-3">0.30</td><td class="p-3 font-bold text-light-blue">0.25</td><td class="p-3 text-green-300">16% better</td></tr>
+                                <tr class="border-b border-blue-700"><td class="p-3"><a href="energy-ratings.html" class="text-light-blue hover:text-white font-semibold">Solar Heat Gain Coefficient</a></td><td class="p-3 text-sm text-gray-300">Measures how well a product blocks heat from the sun</td><td class="p-3">0.30</td><td class="p-3 font-bold text-light-blue">0.27</td><td class="p-3 text-green-300">10% better</td></tr>
+                                <tr class="border-b border-blue-700"><td class="p-3"><a href="energy-ratings.html" class="text-light-blue hover:text-white font-semibold">Air Leakage</a></td><td class="p-3 text-sm text-gray-300">Measures how much air passes through cracks in the window assembly</td><td class="p-3">0.30</td><td class="p-3 font-bold text-light-blue">0.10</td><td class="p-3 text-green-300">67% better</td></tr>
+                                <tr class="border-b border-blue-700"><td class="p-3"><a href="energy-ratings.html" class="text-light-blue hover:text-white font-semibold">Condensation Resistance</a></td><td class="p-3 text-sm text-gray-300">Measures how well a product resists the formation of condensation</td><td class="p-3">50</td><td class="p-3 font-bold text-light-blue">65</td><td class="p-3 text-green-300">30% better</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="energy-ratings.html" class="btn bg-light-blue text-dark-blue hover:bg-white">View All Energy Ratings</a>
+                    </div>
+                </div>
+              
+                <div class="flex flex-col md:flex-row gap-8 items-center mb-16">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Engineered as a Complete System</h2>
+                        <p class="text-gray-700 mb-4">
+                            Each Minmar window and door is designed with energy efficiency at its core. Our systems 
+                            approach means that every component — from glass and frames to spacers and weather seals — 
+                            works together to create a complete thermal barrier between your home and the elements.
+                        </p>
+                        <p class="text-gray-700 mb-6">
+                            This holistic design philosophy results in products that not only meet Energy Star® 
+                            requirements but often exceed them, providing superior performance and maximum energy 
+                            savings throughout the year, regardless of climate conditions.
+                        </p>
+                        <a href="energy-savings.html" class="btn btn-default">Learn About Energy Savings</a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <div class="bg-light-blue p-8 rounded-lg">
+                            <div class="text-center">
+                                <div class="mb-4">
+                                    <svg viewBox="0 0 200 200" width="200" height="200" class="mx-auto"><circle cx="100" cy="100" r="90" fill="#E5F0F9" stroke="#0057A6" stroke-width="4" /><text x="100" y="100" text-anchor="middle" dominant-baseline="middle" font-size="14" font-weight="bold" fill="#0057A6">WINDOW SYSTEM DIAGRAM</text></svg>
+                                </div>
+                                <p class="text-gray-700 text-sm">Interactive diagram showing how all energy-efficient components work together as a system</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="bg-light-gray p-8 rounded-lg mb-16">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Find the Right Energy Solution</h2>
+                        <p class="text-lg text-gray-700 max-w-3xl mx-auto">Minmar offers customized energy solutions optimized for your specific climate, home style, and budget.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl text-minmar-blue mb-4">❄️</div><h3 class="text-xl font-bold text-dark-blue mb-2">Northern Climate Solution</h3><p class="text-gray-700 mb-4">Optimized for heating-dominant climates with enhanced insulation properties and moderate solar heat gain.</p><a href="energy-ratings.html" class="text-minmar-blue hover:text-dark-blue font-semibold">Northern Zone Details →</a></div>
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl text-minmar-blue mb-4">☀️</div><h3 class="text-xl font-bold text-dark-blue mb-2">Southern Climate Solution</h3><p class="text-gray-700 mb-4">Designed for cooling-dominant climates with enhanced solar blocking capability and good insulation.</p><a href="energy-ratings.html" class="text-minmar-blue hover:text-dark-blue font-semibold">Southern Zone Details →</a></div>
+                        <div class="bg-white rounded-lg shadow-md p-6 text-center"><div class="text-4xl text-minmar-blue mb-4">🔄</div><h3 class="text-xl font-bold text-dark-blue mb-2">Mixed Climate Solution</h3><p class="text-gray-700 mb-4">Balanced performance for regions that experience significant heating and cooling requirements.</p><a href="energy-ratings.html" class="text-minmar-blue hover:text-dark-blue font-semibold">Mixed Zone Details →</a></div>
+                    </div>
+                </div>
+              
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Ready to Improve Your Home's Energy Efficiency?</h2>
+                    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
+                        Contact us today to learn more about our energy-efficient windows and doors, 
+                        and discover how much you could save on your energy bills.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="calculate-savings.html" class="btn btn-default bg-warm-accent hover:bg-amber-600 text-white">Calculate My Savings</a>
+                        <a href="get-a-quote.html" class="btn btn-default">Get a Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

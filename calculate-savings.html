@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="energy-solutions.html" class="text-gray-300 hover:underline">Energy Solutions</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Calculate Savings</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Calculate Your Energy Savings</h1>
+                <p class="page-banner-description text-gray-200">See how much you could save with Minmar's energy-efficient windows and doors</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">How Much Could You Save?</h2>
+                    <p class="text-lg text-gray-700">
+                        Upgrading to energy-efficient windows and doors can significantly reduce your utility bills 
+                        and increase your home's comfort. Use our calculator below to estimate your potential savings.
+                    </p>
+                </div>
+              
+                <div class="bg-light-gray rounded-lg p-8 mb-16 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-lg shadow-sm">
+                        <h3 class="text-2xl font-bold text-dark-blue mb-6 text-center">Energy Savings Calculator</h3>
+                        <form id="savings-calculator-form" class="space-y-6">
+                            <div>
+                                <label for="homeSqFt" class="block text-gray-700 font-medium mb-2">Home Square Footage</label>
+                                <input type="number" id="homeSqFt" name="homeSqFt" placeholder="Enter square footage" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required/>
+                            </div>
+                            <div>
+                                <label for="numWindows" class="block text-gray-700 font-medium mb-2">Number of Windows</label>
+                                <input type="number" id="numWindows" name="numWindows" placeholder="Enter number of windows" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required/>
+                            </div>
+                            <div>
+                                <label for="currentWindowType" class="block text-gray-700 font-medium mb-2">Current Window Type</label>
+                                <select id="currentWindowType" name="currentWindowType" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required>
+                                    <option value="">Select window type</option>
+                                    <option value="single-pane">Single Pane</option>
+                                    <option value="double-pane-old">Double Pane (10+ years old)</option>
+                                    <option value="double-pane-new">Double Pane (newer)</option>
+                                    <option value="energy-efficient">Energy Efficient</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="climateZone" class="block text-gray-700 font-medium mb-2">Climate Zone</label>
+                                <select id="climateZone" name="climateZone" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required>
+                                    <option value="">Select your climate zone</option>
+                                    <option value="northeast">Northeast</option>
+                                    <option value="southeast">Southeast</option>
+                                    <option value="midwest">Midwest</option>
+                                    <option value="southwest">Southwest</option>
+                                    <option value="west">West</option>
+                                    <option value="northwest">Northwest</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="avgMonthlyBill" class="block text-gray-700 font-medium mb-2">Average Monthly Energy Bill ($)</label>
+                                <input type="number" id="avgMonthlyBill" name="avgMonthlyBill" placeholder="Enter average monthly bill" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required/>
+                            </div>
+                            <button type="submit" class="btn btn-default w-full bg-minmar-blue hover:bg-dark-blue py-3 text-lg">Calculate My Savings</button>
+                        </form>
+                        
+                        <div id="calculator-results" class="hidden mt-8 p-6 bg-light-blue rounded-lg">
+                            <h4 class="text-xl font-bold text-dark-blue mb-4">Your Estimated Savings</h4>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-white p-4 rounded-lg text-center shadow">
+                                    <p class="text-gray-700 mb-1">Estimated Annual Savings</p>
+                                    <p id="annualSavings" class="text-3xl font-bold text-energy-green">$0</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg text-center shadow">
+                                    <p class="text-gray-700 mb-1">10-Year Savings</p>
+                                    <p id="tenYearSavings" class="text-3xl font-bold text-energy-green">$0</p>
+                                </div>
+                                <div class="bg-white p-4 rounded-lg text-center shadow">
+                                    <p class="text-gray-700 mb-1">Energy Reduction</p>
+                                    <p id="energyReduction" class="text-3xl font-bold text-energy-green">0%</p>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-700 italic">
+                                Note: These calculations are estimates based on industry averages. Your actual savings may vary 
+                                depending on your specific situation, energy costs, and other factors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-6 text-center">Get a Personalized Energy Savings Report</h2>
+                    <p class="text-center text-lg text-gray-700 mb-8">
+                        Want a more accurate calculation? Our energy experts can provide you with a detailed savings analysis 
+                        based on your specific home and energy usage patterns.
+                    </p>
+                    <div class="bg-light-blue rounded-lg p-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-xl font-bold text-dark-blue mb-4">Our Free Home Energy Assessment Includes:</h3>
+                                <ul class="space-y-3 text-gray-700">
+                                    <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Detailed inspection of current windows and doors</span></li>
+                                    <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Thermal efficiency evaluation</span></li>
+                                    <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Customized energy savings projection</span></li>
+                                    <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Personalized product recommendations</span></li>
+                                    <li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Available rebates and incentives information</span></li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <p class="text-lg font-bold text-dark-blue mb-4">Schedule Your Free Assessment Today</p>
+                                <a href="get-a-quote.html" class="btn btn-lg btn-default bg-minmar-blue hover:bg-dark-blue w-full md:w-auto">Book My FREE Assessment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="mt-16 text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-6">Explore Our Energy-Efficient Products</h2>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="energy-solutions.html" class="btn btn-default">View Energy Solutions</a>
+                        <a href="loweglass.html" class="btn btn-outline">Learn About Low-E Glass</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

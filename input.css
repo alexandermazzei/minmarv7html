@@ -1,0 +1,425 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * Use a better box model (opinionated).
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * Use a more readable tab size (opinionated).
+ */
+
+:root {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct height in Firefox.
+ */
+
+hr {
+  height: 0; /* 1 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Add the correct text decoration in Chrome, Edge, and Safari.
+ */
+
+a {
+  text-decoration: none;
+}
+
+/**
+ * Add the correct font weight in Edge and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Remove the inheritance of text transform in Edge and Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Chrome and Safari.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Tailwind directives */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+
+@layer base {
+  :root {
+    --background-hsl: 0 0% 100%;
+    --foreground-hsl: 222.2 84% 4.9%;
+
+    --card-hsl: 0 0% 100%;
+    --card-foreground-hsl: 222.2 84% 4.9%;
+
+    --popover-hsl: 0 0% 100%;
+    --popover-foreground-hsl: 222.2 84% 4.9%;
+
+    --primary-hsl: 210 100% 33%; /* Minmar Blue (used by Button component) */
+    --primary-foreground-hsl: 210 40% 98%;
+
+    --secondary-hsl: 210 40% 96.1%;
+    --secondary-foreground-hsl: 222.2 47.4% 11.2%;
+
+    --muted-hsl: 210 40% 96.1%;
+    --muted-foreground-hsl: 215.4 16.3% 46.9%;
+
+    --accent-hsl: 210 40% 96.1%;
+    --accent-foreground-hsl: 222.2 47.4% 11.2%;
+
+    --destructive-hsl: 0 84.2% 60.2%;
+    --destructive-foreground-hsl: 210 40% 98%;
+
+    --border-hsl: 214.3 31.8% 91.4%;
+    --input-hsl: 214.3 31.8% 91.4%;
+    --ring-hsl: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    /* Custom theme colors from your design */
+    --minmar-blue-hsl: 210 100% 33%; /* Same as primary */
+    --dark-blue-hsl: 210 100% 23%;   /* A darker version of primary for hovers etc. */
+    --light-gray-hsl: 210 40% 96.1%; /* secondary/muted */
+    --medium-gray-hsl: 215.4 16.3% 46.9%; /* muted-foreground */
+    --dark-gray-hsl: 222.2 47.4% 11.2%; /* secondary-foreground */
+    --light-blue-hsl: 210 100% 90%; /* Lighter version of primary */
+    --energy-green-hsl: 120 60% 45%;
+    --warm-accent-hsl: 38 92% 50%;
+  }
+
+  /* .dark variables can be added here if you plan to implement dark mode with JS */
+}
+
+@layer base {
+  * {
+    @apply border-border-color; /* Uses custom name from tailwind.config.js */
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+/* Replicate Button component variants if not fully handled by Tailwind config + utility classes */
+/* Tailwind should handle most of this if config is correct and classes are applied directly */
+@layer components {
+  .btn {
+    /* Base button styles */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    padding: 0.75rem 1.5rem;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+  }
+  
+  .btn:focus-visible {
+    outline: 2px solid var(--ring-color);
+    outline-offset: 2px;
+  }
+  
+  .btn:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  .btn-default,
+  .btn.bg-minmar-blue,
+  .btn.bg-\[\#0057A6\],
+  .btn.bg-\[\#003B70\] {
+    @apply bg-minmar-blue text-white border border-minmar-blue transition-all duration-200 ease-in-out transform hover:scale-105;
+  }
+  .btn-default:hover,
+  .btn.bg-minmar-blue:hover,
+  .btn.bg-\[\#0057A6\]:hover,
+  .btn.bg-\[\#003B70\]:hover {
+    @apply bg-white text-minmar-blue border-2 border-minmar-blue shadow-md;
+  }
+  
+  /* Ensure outline buttons have proper hover effect */
+  .btn-outline.border-\[\#003B70\]:hover {
+    @apply bg-[#003B70] text-white border-[#003B70];
+  }
+  
+  /* Force white buttons to show dark blue border on hover */
+  .btn.bg-white {
+    position: relative;
+    border: 1px solid transparent !important;
+    transition: all 0.2s ease-in-out !important;
+  }
+  .btn.bg-white::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn.bg-white:hover::after {
+    border-color: #003B70 !important;
+  }
+  
+  /* Custom white button with border - using !important to force styles */
+  a.btn.btn-lg.white-btn {
+    position: relative !important;
+    border: 1px solid transparent !important;
+    transition: all 0.2s ease-in-out !important;
+    background-color: white !important;
+    color: #0057A6 !important;
+  }
+  a.btn.btn-lg.white-btn:hover {
+    border: 1px solid #003B70 !important;
+    background-color: #f3f4f6 !important;
+    color: #003B70 !important;
+  }
+  .btn-destructive {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+  }
+  
+  .btn-destructive:hover {
+    background-color: color-mix(in srgb, var(--destructive) 90%, transparent);
+  }
+  .btn-outline {
+    border: 1px solid var(--input);
+    background-color: var(--background);
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  .btn-secondary { /* This maps to Tailwind's secondary color config */
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+  }
+  .btn-ghost:hover {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+  .btn-link {
+    color: var(--primary);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  
+  .btn-link:hover {
+    text-decoration: underline;
+  }
+
+  .btn-sm {
+    height: 2.25rem;
+    border-radius: 0.375rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .btn-lg {
+    height: 2.75rem;
+    border-radius: 0.375rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .btn-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  
+  /* Force white button to have dark blue text */
+  .bg-white.text-\[\\#003B70\],
+  .bg-white .text-\[\\#003B70\],
+  a[href*="explore-products"] {
+    color: #003B70 !important;
+  }
+  
+  /* Ensure text stays dark blue on hover */
+  a[href*="explore-products"]:hover {
+    color: #003B70 !important;
+  }
+  
+  /* White button variant */
+  .btn-white {
+    background-color: white;
+    color: #0057A6;
+    border: none;
+    white-space: nowrap;
+    padding: 0.75rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-white:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Button wrapper for hover effect */
+  .btn-wrapper {
+    display: flex;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .btn-wrapper:hover {
+    border-color: #003B70;
+  }
+
+  /* Page Banner styles (example of component styling) */
+  .page-banner-title {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+  }
+  .page-banner-description {
+    @apply text-xl max-w-3xl;
+  }
+
+  /* Prose styles for privacy policy etc. */
+  .prose h2 { @apply text-2xl font-bold text-dark-blue mt-8 mb-4; }
+  .prose h3 { @apply text-xl font-bold text-dark-blue mt-6 mb-2; }
+  .prose p { @apply mb-4 text-gray-700; } /* Adjusted default prose text color */
+  .prose ul { @apply list-disc pl-6 mb-4 text-gray-700; }
+  .prose strong { @apply font-semibold; }
+  .prose a { @apply text-minmar-blue hover:underline; }
+
+  /* Care instructions page specific styles */
+  .care-content .care-tabs { @apply flex mb-8 border-b border-gray-200; }
+  .care-content .care-tab { @apply px-6 py-3 font-medium text-gray-600 border-b-2 border-transparent cursor-pointer; }
+  .care-content .care-tab.active,
+  .care-content .care-tab:hover { @apply text-minmar-blue border-minmar-blue; }
+  .care-content .care-section { @apply mb-12; }
+  .care-content .care-grid { @apply grid grid-cols-1 md:grid-cols-2 gap-8; }
+  .care-content .care-steps { @apply list-decimal pl-6 space-y-3; }
+
+  /* Button hover states are handled individually above */
+
+  .btn-header {
+    @apply bg-white text-[#0057A6] border border-[#0057A6] rounded-lg px-6 py-3 font-medium transition-colors duration-200 cursor-pointer shadow-sm text-base text-center;
+  }
+  .btn-header:hover, .btn-header:focus {
+    @apply bg-[#0057A6] text-white border-[#0057A6];
+  }
+  @media (max-width: 640px) {
+    .btn-header {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-size: 1rem;
+      width: 100%;
+      text-align: center;
+      white-space: normal;
+    }
+  }
+}

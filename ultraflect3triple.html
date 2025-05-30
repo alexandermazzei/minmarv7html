@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1523735039455-efbf03614b73?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="energy-solutions.html" class="text-gray-300 hover:underline">Energy Solutions</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">UltraFlect 3 Triple Glass</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">UltraFlect 3 Triple Glass</h1>
+                <p class="page-banner-description text-gray-200">Premium triple-pane glass for maximum energy efficiency and sound insulation</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+                    <div class="bg-gray-200 h-80 rounded-lg flex items-center justify-center shadow-md">
+                         <img src="https://via.placeholder.com/400x320.png?text=UltraFlect+3+Illustration" alt="UltraFlect 3 Triple Glass Illustration" class="object-contain h-full w-auto rounded-lg">
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Superior Triple-Pane Technology</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            UltraFlect 3 represents the pinnacle of residential glass technology, featuring three panes of glass 
+                            with two insulating chambers. This premium solution delivers exceptional thermal performance, 
+                            substantially reducing heat transfer and providing superior sound insulation.
+                        </p>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Each insulating chamber is filled with argon gas and separated by warm-edge spacers, while 
+                            multiple Low-E coatings work together to reflect heat back to its source. The result is 
+                            significantly improved energy efficiency and year-round comfort for your home.
+                        </p>
+                        <a href="energy-ratings.html" class="btn btn-default">View Energy Performance Ratings</a>
+                    </div>
+                </div>
+
+                <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">The UltraFlect 3 Advantage</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-light-blue p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-4">Enhanced Energy Efficiency</h3><ul class="space-y-2 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Up to 40% more energy efficient than standard double-pane windows</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Superior U-factor with reduced heat conduction</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Optimal solar heat gain control for any climate</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Reduced energy bills in both winter and summer</span></li></ul></div>
+                    <div class="bg-light-blue p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-4">Superior Comfort</h3><ul class="space-y-2 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Eliminates cold spots near windows in winter</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Reduces condensation by maintaining warmer interior glass surface</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Blocks up to 95% of harmful UV rays to prevent fading</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Consistent indoor temperature throughout your home</span></li></ul></div>
+                    <div class="bg-light-blue p-6 rounded-lg shadow-sm"><h3 class="text-xl font-bold text-dark-blue mb-4">Sound Reduction</h3><ul class="space-y-2 text-gray-700"><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Up to 50% noise reduction compared to single-pane windows</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Multiple glass panes disrupt sound wave transmission</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Ideal for homes in urban areas or near busy streets</span></li><li class="flex items-start"><span class="text-minmar-blue mr-2">✓</span><span>Creates a more peaceful and quiet indoor environment</span></li></ul></div>
+                </div>
+
+                <div class="bg-light-gray py-12 px-8 rounded-lg mb-16">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-8 text-center">How UltraFlect 3 is Built</h2>
+                    <div class="relative h-80 bg-white rounded-lg flex items-center justify-center mb-8 shadow-md">
+                        <img src="https://via.placeholder.com/500x320.png?text=Triple-Pane+Cross-Section" alt="Triple-Pane Glass Cross-Section Diagram" class="object-contain h-full w-auto rounded-lg">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold text-dark-blue mb-4">Components:</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start"><span class="text-minmar-blue mr-2">1.</span><span><strong>Three Panes of Glass:</strong> Creates two insulating air spaces for maximum thermal efficiency</span></li>
+                                <li class="flex items-start"><span class="text-minmar-blue mr-2">2.</span><span><strong>Double Low-E Coatings:</strong> Invisible metallic layers that reflect heat while allowing light</span></li>
+                                <li class="flex items-start"><span class="text-minmar-blue mr-2">3.</span><span><strong>Argon Gas Fill:</strong> Inert gas between panes that provides better insulation than air</span></li>
+                                <li class="flex items-start"><span class="text-minmar-blue mr-2">4.</span><span><strong>Warm-Edge Spacers:</strong> Non-metallic spacers that reduce heat transfer at the edge of the glass</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-dark-blue mb-4">Performance Metrics:</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-4 rounded-lg text-center shadow-sm"><h4 class="font-semibold text-dark-blue mb-1">U-Factor</h4><div class="text-3xl font-bold text-energy-green">0.16</div><p class="text-sm text-gray-700">Industry-leading thermal performance</p></div>
+                                <div class="bg-white p-4 rounded-lg text-center shadow-sm"><h4 class="font-semibold text-dark-blue mb-1">SHGC</h4><div class="text-3xl font-bold text-energy-green">0.25</div><p class="text-sm text-gray-700">Excellent solar heat control</p></div>
+                                <div class="bg-white p-4 rounded-lg text-center shadow-sm"><h4 class="font-semibold text-dark-blue mb-1">VT</h4><div class="text-3xl font-bold text-energy-green">0.48</div><p class="text-sm text-gray-700">Optimal visible light transmission</p></div>
+                                <div class="bg-white p-4 rounded-lg text-center shadow-sm"><h4 class="font-semibold text-dark-blue mb-1">STC Rating</h4><div class="text-3xl font-bold text-energy-green">34</div><p class="text-sm text-gray-700">Superior sound transmission control</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Experience Ultimate Home Comfort</h2>
+                    <p class="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">Ready to experience the exceptional energy efficiency, comfort, and sound reduction of UltraFlect 3 Triple Glass? Contact us today to learn about incorporating this premium glass option into your window and door solutions.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="get-a-quote.html" class="btn btn-default">Get a Free Quote</a>
+                        <a href="find-a-dealer.html" class="btn btn-outline">Find a Dealer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

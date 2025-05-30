@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minmar Windows and Doors | Premium Energy-Efficient Windows & Doors</title>
+    <meta name="description" content="Minmar offers premium energy-efficient vinyl windows and doors designed to reduce energy bills and improve home comfort. Professional installation with lifetime warranty.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css"> <!-- Link to compiled Tailwind CSS -->
+    <link rel="stylesheet" href="src/css/fixes.css"> <!-- Fixes for CSS linting issues -->
+</head>
+<body class="font-inter">
+
+    <!-- Header -->
+        <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+    
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+    
+        <div class="flex items-center">
+          <button 
+            class="md:hidden p-2 rounded-md text-white"
+            aria-label="Toggle menu"
+            aria-expanded="false" 
+            id="mobileMenuButton"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-[#003B70] shadow-lg">
+      <div class="container mx-auto py-4 px-4">
+        <nav class="flex flex-col space-y-4">
+          <a href="windows.html" class="text-white font-medium py-2 border-b border-blue-700/40">Windows</a>
+          <a href="doors.html" class="text-white font-medium py-2 border-b border-blue-700/40">Doors</a>
+          <a href="energy-savings.html" class="text-white font-medium py-2 border-b border-blue-700/40">Energy Savings</a>
+          <a href="resources.html" class="text-white font-medium py-2 border-b border-blue-700/40">Resources</a>
+          <a href="support.html" class="text-white font-medium py-2 border-b border-blue-700/40">Support</a>
+          <a href="about.html" class="text-white font-medium py-2 border-b border-blue-700/40">About</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+<main>
+        <!-- Page Banner -->
+        <div class="py-16 px-4" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/quote.jpg); background-size: cover; background-position: center;">
+            <div class="container mx-auto">
+                <nav class="mb-4">
+                    <ol class="flex flex-wrap text-sm">
+                        <li><a href="index.html" class="text-gray-300 hover:underline">Home</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><a href="support.html" class="text-gray-300 hover:underline">Support</a></li>
+                        <li class="flex items-center"><span class="mx-2 text-gray-400">/</span><span class="text-white">Get a Quote</span></li>
+                    </ol>
+                </nav>
+                <h1 class="page-banner-title text-white">Get a Free Quote</h1>
+                <p class="page-banner-description text-gray-200">Request a quote for premium Minmar windows and doors</p>
+            </div>
+        </div>
+
+        <section class="py-16">
+            <div class="container mx-auto px-4">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Request Your Free Quote</h2>
+                    <p class="text-lg text-gray-700">
+                        Complete the form below to receive a detailed quote for Minmar windows and doors. 
+                        A local authorized dealer will contact you to discuss your specific needs and 
+                        provide pricing information.
+                    </p>
+                </div>
+              
+                <div class="flex flex-col md:flex-row gap-8 mb-16">
+                    <div class="md:w-2/3">
+                        <div class="bg-white rounded-lg shadow-md p-8">
+                            <h3 class="text-2xl font-bold text-dark-blue mb-6">Quick Quote</h3>
+                            <form id="get-a-quote-form">
+                                <div class="grid grid-cols-1 gap-6">
+                                    <div>
+                                        <label for="fullName" class="block text-gray-700 font-medium mb-2">Full Name*</label>
+                                        <input type="text" id="fullName" name="fullName" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="email" class="block text-gray-700 font-medium mb-2">Email*</label>
+                                        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="phone" class="block text-gray-700 font-medium mb-2">Phone*</label>
+                                        <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">Preferred Contact Method*</p>
+                                        <div class="flex flex-col sm:flex-row gap-4">
+                                            <div class="flex items-center">
+                                                <input type="radio" id="contactPhone" name="contactMethod" value="phone" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" required />
+                                                <label for="contactPhone" class="ml-2 text-gray-700">Phone</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input type="radio" id="contactEmail" name="contactMethod" value="email" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" />
+                                                <label for="contactEmail" class="ml-2 text-gray-700">Email</label>
+                                            </div>
+                                            <div class="flex items-center">
+                                                <input type="radio" id="contactEither" name="contactMethod" value="either" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" />
+                                                <label for="contactEither" class="ml-2 text-gray-700">Either</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">Address of Project</p>
+                                        <div class="grid grid-cols-1 gap-4">
+                                            <div>
+                                                <label for="street" class="block text-gray-700 font-medium mb-2">Street Address*</label>
+                                                <input type="text" id="street" name="street" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                            </div>
+                                            <div>
+                                                <label for="city" class="block text-gray-700 font-medium mb-2">City*</label>
+                                                <input type="text" id="city" name="city" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                            </div>
+                                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                <div>
+                                                    <label for="state" class="block text-gray-700 font-medium mb-2">State*</label>
+                                                    <select id="state" name="state" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required>
+                                                        <option value="">Select State</option>
+                                                        <option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="ME">Maine</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NY">New York</option><option value="PA">Pennsylvania</option><option value="RI">Rhode Island</option><option value="VT">Vermont</option><option value="VA">Virginia</option><option value="WV">West Virginia</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label for="zip" class="block text-gray-700 font-medium mb-2">ZIP Code*</label>
+                                                    <input type="text" id="zip" name="zip" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">Are you a:*</p>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="radio" id="typeHomeowner" name="customerType" value="homeowner" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" required /><label for="typeHomeowner" class="ml-2 text-gray-700">Homeowner</label></div>
+                                            <div class="flex items-center"><input type="radio" id="typeBuilder" name="customerType" value="builder" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="typeBuilder" class="ml-2 text-gray-700">Builder/Contractor</label></div>
+                                            <div class="flex items-center"><input type="radio" id="typeManager" name="customerType" value="manager" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="typeManager" class="ml-2 text-gray-700">Property Manager</label></div>
+                                            <div class="flex items-center"><input type="radio" id="typeOther" name="customerType" value="other" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="typeOther" class="ml-2 text-gray-700">Other (please specify)</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherCustomerType" name="otherCustomerType" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="products" class="block text-gray-700 font-medium mb-2">What are you interested in? (select all that apply)*</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="checkbox" id="window_replacement" name="products" value="window_replacement" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="window_replacement" class="ml-2 text-gray-700">Window Replacement</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="new_window" name="products" value="new_window" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="new_window" class="ml-2 text-gray-700">New Window Installation</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="door_replacement" name="products" value="door_replacement" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="door_replacement" class="ml-2 text-gray-700">Door Replacement</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="new_door" name="products" value="new_door" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="new_door" class="ml-2 text-gray-700">New Door Installation</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="repair" name="products" value="repair" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="repair" class="ml-2 text-gray-700">Repair/Service</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="custom" name="products" value="custom" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="custom" class="ml-2 text-gray-700">Custom Solutions</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="other_product" name="products" value="other_product" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="other_product" class="ml-2 text-gray-700">Other</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherProduct" name="otherProduct" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">Type of Property*</p>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="radio" id="propertySingle" name="propertyType" value="single" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" required /><label for="propertySingle" class="ml-2 text-gray-700">Single-family home</label></div>
+                                            <div class="flex items-center"><input type="radio" id="propertyMulti" name="propertyType" value="multi" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="propertyMulti" class="ml-2 text-gray-700">Multi-family home</label></div>
+                                            <div class="flex items-center"><input type="radio" id="propertyCommercial" name="propertyType" value="commercial" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="propertyCommercial" class="ml-2 text-gray-700">Commercial property</label></div>
+                                            <div class="flex items-center"><input type="radio" id="propertyOther" name="propertyType" value="other" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="propertyOther" class="ml-2 text-gray-700">Other (please specify)</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherPropertyType" name="otherPropertyType" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="quantity" class="block text-gray-700 font-medium mb-2">Number of Windows/Doors Involved*</label>
+                                        <input type="text" id="quantity" name="quantity" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" required />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="age" class="block text-gray-700 font-medium mb-2">Age of Existing Windows/Doors (if applicable)</label>
+                                        <input type="text" id="age" name="age" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="typesOfProducts" class="block text-gray-700 font-medium mb-2">Type(s) of Windows/Doors (select all that apply)*</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="checkbox" id="vinyl" name="typesOfProducts" value="vinyl" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="vinyl" class="ml-2 text-gray-700">Vinyl Windows</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="sliding" name="typesOfProducts" value="sliding" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="sliding" class="ml-2 text-gray-700">Sliding Windows</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="doublehung" name="typesOfProducts" value="doublehung" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="doublehung" class="ml-2 text-gray-700">Double Hung</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="entrydoor" name="typesOfProducts" value="entrydoor" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="entrydoor" class="ml-2 text-gray-700">Entry Doors</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="patiodoor" name="typesOfProducts" value="patiodoor" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="patiodoor" class="ml-2 text-gray-700">Patio Doors</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="custom_shapes" name="typesOfProducts" value="custom_shapes" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="custom_shapes" class="ml-2 text-gray-700">Custom Shapes/Sizes</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="other_type" name="typesOfProducts" value="other_type" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="other_type" class="ml-2 text-gray-700">Other</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherTypeOfProduct" name="otherTypeOfProduct" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="reasonForService" class="block text-gray-700 font-medium mb-2">Reason for Service (select all that apply)*</label>
+                                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="checkbox" id="energy_efficiency" name="reasonForService" value="energy_efficiency" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="energy_efficiency" class="ml-2 text-gray-700">Energy Efficiency Upgrade</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="cosmetic" name="reasonForService" value="cosmetic" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="cosmetic" class="ml-2 text-gray-700">Cosmetic Update</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="repair_reason" name="reasonForService" value="repair_reason" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="repair_reason" class="ml-2 text-gray-700">Damage/Repair Needed</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="construction" name="reasonForService" value="construction" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="construction" class="ml-2 text-gray-700">New Construction</label></div>
+                                            <div class="flex items-center"><input type="checkbox" id="other_reason" name="reasonForService" value="other_reason" class="w-4 h-4 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" /><label for="other_reason" class="ml-2 text-gray-700">Other</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherReason" name="otherReason" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="projectDescription" class="block text-gray-700 font-medium mb-2">Project Description</label>
+                                        <textarea id="projectDescription" name="projectDescription" rows="4" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please describe your project or the issue you are experiencing:"></textarea>
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="photos" class="block text-gray-700 font-medium mb-2">Upload Photos or Documents (optional, for faster assessment)</label>
+                                        <input type="file" id="photos" name="photos" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" multiple />
+                                    </div>
+                                    
+                                    <div>
+                                        <label for="startDate" class="block text-gray-700 font-medium mb-2">Desired Project Start Date</label>
+                                        <input type="date" id="startDate" name="startDate" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" />
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">Is this project time-sensitive?*</p>
+                                        <div class="flex flex-row gap-4">
+                                            <div class="flex items-center"><input type="radio" id="sensitiveYes" name="timeSensitive" value="yes" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" required /><label for="sensitiveYes" class="ml-2 text-gray-700">Yes</label></div>
+                                            <div class="flex items-center"><input type="radio" id="sensitiveNo" name="timeSensitive" value="no" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="sensitiveNo" class="ml-2 text-gray-700">No</label></div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="block text-gray-700 font-medium mb-2">How Did You Hear About Us?*</p>
+                                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                            <div class="flex items-center"><input type="radio" id="search" name="referralSource" value="search" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" required /><label for="search" class="ml-2 text-gray-700">Google/Search Engine</label></div>
+                                            <div class="flex items-center"><input type="radio" id="social" name="referralSource" value="social" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="social" class="ml-2 text-gray-700">Social Media</label></div>
+                                            <div class="flex items-center"><input type="radio" id="referral" name="referralSource" value="referral" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="referral" class="ml-2 text-gray-700">Referral</label></div>
+                                            <div class="flex items-center"><input type="radio" id="previous" name="referralSource" value="previous" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="previous" class="ml-2 text-gray-700">Previous Customer</label></div>
+                                            <div class="flex items-center"><input type="radio" id="other_referral" name="referralSource" value="other_referral" class="w-4 h-4 text-minmar-blue border-gray-300 focus:ring-minmar-blue" /><label for="other_referral" class="ml-2 text-gray-700">Other</label></div>
+                                        </div>
+                                        <div class="mt-2"><input type="text" id="otherReferral" name="otherReferral" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-minmar-blue" placeholder="Please specify if Other" /></div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <input type="checkbox" id="consent" name="consent" class="w-4 h-4 mt-1 text-minmar-blue border-gray-300 rounded focus:ring-minmar-blue" required />
+                                        <label for="consent" class="ml-2 text-gray-700 text-sm">
+                                            I consent to being contacted by Minmar and/or an authorized dealer regarding my quote request. 
+                                            I understand my information will be used in accordance with Minmar's 
+                                            <a href="privacy-policy.html" class="text-minmar-blue hover:underline"> Privacy Policy</a>.
+                                        </label>
+                                    </div>
+                                    
+                                    <div><button type="submit" class="btn btn-default w-full">Submit Quote Request</button></div>
+                                    <p class="text-sm text-gray-500 text-center">* Indicates required field</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/3">
+                        <div class="bg-light-blue rounded-lg shadow-md p-6 mb-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-4">Benefits of Requesting a Quote</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start"><div class="text-2xl mr-3">💰</div><div><h4 class="font-semibold text-dark-blue">Free, No-Obligation Quote</h4><p class="text-gray-700 text-sm">Get detailed pricing information without any commitment or pressure.</p></div></div>
+                                <div class="flex items-start"><div class="text-2xl mr-3">👨‍💼</div><div><h4 class="font-semibold text-dark-blue">Expert Consultation</h4><p class="text-gray-700 text-sm">Connect with product specialists who can help you make informed decisions.</p></div></div>
+                                <div class="flex items-start"><div class="text-2xl mr-3">📏</div><div><h4 class="font-semibold text-dark-blue">Professional Measurement</h4><p class="text-gray-700 text-sm">Receive precise measurements to ensure your windows and doors fit perfectly.</p></div></div>
+                                <div class="flex items-start"><div class="text-2xl mr-3">🏠</div><div><h4 class="font-semibold text-dark-blue">Customized Solutions</h4><p class="text-gray-700 text-sm">Get personalized recommendations based on your home's specific needs.</p></div></div>
+                                <div class="flex items-start"><div class="text-2xl mr-3">⚡</div><div><h4 class="font-semibold text-dark-blue">Energy Savings Analysis</h4><p class="text-gray-700 text-sm">Understand your potential energy savings with efficient windows and doors.</p></div></div>
+                                <div class="flex items-start"><div class="text-2xl mr-3">🔧</div><div><h4 class="font-semibold text-dark-blue">Quality Installation Options</h4><p class="text-gray-700 text-sm">Learn about professional installation from certified Minmar dealers.</p></div></div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-lg shadow-md p-6">
+                            <h3 class="text-xl font-bold text-dark-blue mb-4">Need Immediate Assistance?</h3>
+                            <p class="text-gray-700 mb-4">If you'd prefer to speak with someone directly, our customer service team is ready to help.</p>
+                            <div class="space-y-4 mb-6">
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-minmar-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                                    <span class="text-gray-700"><strong>Phone:</strong> 1-800-MINMAR</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <svg class="w-5 h-5 text-minmar-blue mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                                    <span class="text-gray-700"><strong>Email:</strong> info@minmar.com</span>
+                                </div>
+                            </div>
+                            <a href="find-a-dealer.html" class="btn btn-outline w-full">Find a Local Dealer</a>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="bg-white rounded-lg shadow-md p-8 mb-16">
+                    <h3 class="text-2xl font-bold text-dark-blue mb-6 text-center">What Happens Next?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center"><div class="w-16 h-16 rounded-full bg-light-blue flex items-center justify-center text-2xl font-bold text-minmar-blue mx-auto mb-4">1</div><h4 class="text-lg font-bold text-dark-blue mb-2">Dealer Contact</h4><p class="text-gray-700">Within 24-48 hours, a local authorized Minmar dealer will contact you to discuss your project.</p></div>
+                        <div class="text-center"><div class="w-16 h-16 rounded-full bg-light-blue flex items-center justify-center text-2xl font-bold text-minmar-blue mx-auto mb-4">2</div><h4 class="text-lg font-bold text-dark-blue mb-2">Free Consultation</h4><p class="text-gray-700">Schedule a convenient time for an in-home consultation and professional measurements.</p></div>
+                        <div class="text-center"><div class="w-16 h-16 rounded-full bg-light-blue flex items-center justify-center text-2xl font-bold text-minmar-blue mx-auto mb-4">3</div><h4 class="text-lg font-bold text-dark-blue mb-2">Detailed Quote</h4><p class="text-gray-700">Receive a detailed, no-obligation quote tailored to your specific needs and preferences.</p></div>
+                    </div>
+                </div>
+                
+                <div class="bg-minmar-blue text-white p-8 rounded-lg">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-3/4 mb-6 md:mb-0">
+                            <h2 class="text-2xl font-bold mb-2">Not Ready for a Quote?</h2>
+                            <p class="text-lg">Explore our products, find inspiration, or learn more about energy efficiency with Minmar windows and doors.</p>
+                        </div>
+                        <div class="md:w-1/4 flex justify-center md:justify-end">
+                            <a href="explore-products.html" class="btn bg-white text-minmar-blue hover:bg-light-blue text-[#003B70] hover:text-[#003B70]" style="color: #003B70 !important;">Explore Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                 <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
