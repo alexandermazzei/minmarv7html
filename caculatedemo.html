@@ -474,7 +474,7 @@
             // Get U-values
             const currentUValue = windowUValues[data.windowType];
             const newUValue = windowUValues[data.newWindowType];
-            
+
             // Get climate data
             const climateMultiplier = climateMultipliers[data.climateZone];
             const hddCdd = hddCddFactors[data.climateZone];
@@ -512,7 +512,7 @@
             const monthlySavings = annualSavings / 12;
             const lifetimeSavings = annualSavings * 25;
             const efficiencyImprovement = ((currentUValue - newUValue) / currentUValue) * 100;
-            
+
             // Estimated window cost for payback calculation
             const estimatedCost = windowCount * (data.newWindowType.includes('triple') ? 650 : 500);
             const paybackPeriod = Math.max(estimatedCost / Math.max(annualSavings, 1), 1);
