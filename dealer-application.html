@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Minmar Dealer | Premium Windows & Doors</title>
+    <meta name="description" content="Join Minmar's network of authorized dealers. Sell premium energy-efficient windows and doors with excellent dealer support and business growth opportunities.">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="src/css/fixes.css">
+    <style>
+        /* Enhanced button styles */
+        #dealer-application button[type="submit"] {
+            background-color: #0057A6;
+            color: white;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        #dealer-application button[type="submit"]:hover {
+            background-color: #004A8F;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        #dealer-application button[type="submit"]:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-inter">
+    <!-- Header -->
+    <header class="sticky top-0 w-full bg-gradient-to-r from-[#003B70] to-[#0057A6] z-50 shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4 sm:px-6">
+        <a href="index.html" class="flex items-center">
+          <div class="flex items-center justify-center" style="width: 240px; height: 100px;">
+            <img 
+              src="images/minmar logo.png" 
+              alt="MINMAR Logo" 
+              width="220" 
+              height="90" 
+              class="object-contain"
+            />
+          </div>
+        </a>
+        <div class="hidden md:flex items-center space-x-8 pr-8">
+          <a href="windows.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Windows</a>
+          <a href="doors.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Doors</a>
+          <a href="energy-savings.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Energy Savings</a>
+          <a href="resources.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Resources</a>
+          <a href="support.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6">Support</a>
+          <a href="about.html" class="text-white hover:text-gray-200 font-medium transition-colors px-6 pr-4">About</a>
+        </div>
+        <div class="flex items-center">
+          <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+            <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-[#003B70] pb-4 px-4">
+        <a href="windows.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">Windows</a>
+        <a href="doors.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">Doors</a>
+        <a href="energy-savings.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">Energy Savings</a>
+        <a href="resources.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">Resources</a>
+        <a href="support.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">Support</a>
+        <a href="about.html" class="block text-white hover:bg-[#0057A6] px-3 py-2 rounded-md text-base font-medium">About</a>
+      </div>
+    </header>
+
+    <!-- Header action buttons -->
+    <div class="bg-white shadow z-40 relative">
+      <div style="display: flex; justify-content: flex-end; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0.5rem 1rem;">
+        <div style="display: flex; gap: 0.75rem; align-items: center;">
+          <a href="find-a-dealer.html" class="btn btn-outline border-[#003B70] whitespace-nowrap text-center hover:bg-[#003B70] hover:text-white transition-all duration-200">Find a Dealer</a>
+          <a href="get-a-quote.html" class="btn btn-default bg-[#003B70] text-white border-[#003B70] whitespace-nowrap text-center hover:bg-white hover:text-[#003B70] hover:border-2 hover:border-[#003B70] hover:shadow-md transition-all duration-200 transform hover:scale-105">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-[#003B70] to-[#0057A6] text-white py-16">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Become a Minmar Dealer</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto">Join our network of authorized dealers and grow your business with premium energy-efficient windows and doors</p>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-4">Why Partner With Minmar?</h2>
+                    <div class="w-24 h-1 bg-[#0057A6] mx-auto"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Premium Products</h3>
+                        <p class="text-gray-600 text-center">Offer your customers high-quality, energy-efficient windows and doors with industry-leading warranties and performance.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Competitive Pricing</h3>
+                        <p class="text-gray-600 text-center">Benefit from attractive dealer margins and volume-based incentives that maximize your profitability.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Dedicated Support</h3>
+                        <p class="text-gray-600 text-center">Receive comprehensive training, marketing support, and dedicated account management for your success.</p>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Business Growth</h3>
+                        <p class="text-gray-600 text-center">Access exclusive territories and benefit from our national marketing and lead generation programs.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Marketing Tools</h3>
+                        <p class="text-gray-600 text-center">Access to professional marketing materials, digital assets, and co-op advertising programs.</p>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                        <div class="text-[#0057A6] mb-4">
+                            <svg class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3 text-center">Reliable Supply</h3>
+                        <p class="text-gray-600 text-center">Consistent product availability and reliable delivery to meet your project timelines and customer expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dealer Application Form -->
+        <section id="dealer-application" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-dark-blue mb-4">Start Your Dealer Application</h2>
+                        <div class="w-24 h-1 bg-[#0057A6] mx-auto mb-6"></div>
+                        <p class="text-gray-600 max-w-2xl mx-auto">Complete the form below to apply to become an authorized Minmar dealer. Our team will review your application and get back to you within 2 business days.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <form class="p-6 md:p-8">
+                            <h3 class="text-xl font-semibold text-dark-blue mb-6 pb-2 border-b">Business Information</h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <label for="business-name" class="block text-gray-700 font-medium mb-2">Business Name *</label>
+                                    <input type="text" id="business-name" name="business-name" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="business-type" class="block text-gray-700 font-medium mb-2">Type of Business *</label>
+                                    <select id="business-type" name="business-type" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select business type</option>
+                                        <option value="contractor">Contractor</option>
+                                        <option value="home-improvement">Home Improvement</option>
+                                        <option value="lumber-yard">Lumber Yard</option>
+                                        <option value="window-door-dealer">Window & Door Dealer</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="years-in-business" class="block text-gray-700 font-medium mb-2">Years in Business *</label>
+                                    <input type="number" id="years-in-business" name="years-in-business" min="0" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="tax-id" class="block text-gray-700 font-medium mb-2">Tax ID (EIN) *</label>
+                                    <input type="text" id="tax-id" name="tax-id" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="XX-XXXXXXX">
+                                </div>
+                                
+                                <div class="md:col-span-2">
+                                    <label for="business-address" class="block text-gray-700 font-medium mb-2">Business Address *</label>
+                                    <input type="text" id="business-address" name="business-address" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="city" class="block text-gray-700 font-medium mb-2">City *</label>
+                                    <input type="text" id="city" name="city" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="state" class="block text-gray-700 font-medium mb-2">State *</label>
+                                    <select id="state" name="state" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select state</option>
+                                        <option value="AL">Alabama</option>
+                                        <option value="AK">Alaska</option>
+                                        <option value="AZ">Arizona</option>
+                                        <option value="AR">Arkansas</option>
+                                        <option value="CA">California</option>
+                                        <option value="CO">Colorado</option>
+                                        <option value="CT">Connecticut</option>
+                                        <option value="DE">Delaware</option>
+                                        <option value="FL">Florida</option>
+                                        <option value="GA">Georgia</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="ID">Idaho</option>
+                                        <option value="IL">Illinois</option>
+                                        <option value="IN">Indiana</option>
+                                        <option value="IA">Iowa</option>
+                                        <option value="KS">Kansas</option>
+                                        <option value="KY">Kentucky</option>
+                                        <option value="LA">Louisiana</option>
+                                        <option value="ME">Maine</option>
+                                        <option value="MD">Maryland</option>
+                                        <option value="MA">Massachusetts</option>
+                                        <option value="MI">Michigan</option>
+                                        <option value="MN">Minnesota</option>
+                                        <option value="MS">Mississippi</option>
+                                        <option value="MO">Missouri</option>
+                                        <option value="MT">Montana</option>
+                                        <option value="NE">Nebraska</option>
+                                        <option value="NV">Nevada</option>
+                                        <option value="NH">New Hampshire</option>
+                                        <option value="NJ">New Jersey</option>
+                                        <option value="NM">New Mexico</option>
+                                        <option value="NY">New York</option>
+                                        <option value="NC">North Carolina</option>
+                                        <option value="ND">North Dakota</option>
+                                        <option value="OH">Ohio</option>
+                                        <option value="OK">Oklahoma</option>
+                                        <option value="OR">Oregon</option>
+                                        <option value="PA">Pennsylvania</option>
+                                        <option value="RI">Rhode Island</option>
+                                        <option value="SC">South Carolina</option>
+                                        <option value="SD">South Dakota</option>
+                                        <option value="TN">Tennessee</option>
+                                        <option value="TX">Texas</option>
+                                        <option value="UT">Utah</option>
+                                        <option value="VT">Vermont</option>
+                                        <option value="VA">Virginia</option>
+                                        <option value="WA">Washington</option>
+                                        <option value="WV">West Virginia</option>
+                                        <option value="WI">Wisconsin</option>
+                                        <option value="WY">Wyoming</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="zip-code" class="block text-gray-700 font-medium mb-2">ZIP Code *</label>
+                                    <input type="text" id="zip-code" name="zip-code" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Business Phone *</label>
+                                    <input type="tel" id="phone" name="phone" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="website" class="block text-gray-700 font-medium mb-2">Website</label>
+                                    <input type="url" id="website" name="website" 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div class="md:col-span-2">
+                                    <label for="business-description" class="block text-gray-700 font-medium mb-2">Briefly describe your business *</label>
+                                    <textarea id="business-description" name="business-description" rows="3" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                </div>
+                            </div>
+                            
+                            <!-- Primary Contact Information -->
+                            <h3 class="text-xl font-semibold text-dark-blue mb-6 pb-2 border-b mt-12">Primary Contact Information</h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" name="first-name" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" name="last-name" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="job-title" class="block text-gray-700 font-medium mb-2">Job Title *</label>
+                                    <input type="text" id="job-title" name="job-title" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                                    <input type="email" id="email" name="email" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="your@email.com">
+                                </div>
+                                
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Direct Phone *</label>
+                                    <input type="tel" id="direct-phone" name="direct-phone" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                
+                                <div>
+                                    <label for="best-time" class="block text-gray-700 font-medium mb-2">Best Time to Call</label>
+                                    <select id="best-time" name="best-time" 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select best time</option>
+                                        <option value="morning">Morning (8am-12pm)</option>
+                                        <option value="afternoon">Afternoon (12pm-5pm)</option>
+                                        <option value="evening">Evening (5pm-8pm)</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="md:col-span-2">
+                                    <label for="hear-about" class="block text-gray-700 font-medium mb-2">How did you hear about us? *</label>
+                                    <select id="hear-about" name="hear-about" required 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                        <option value="">Select an option</option>
+                                        <option value="search">Search Engine (Google, Bing, etc.)</option>
+                                        <option value="social">Social Media</option>
+                                        <option value="referral">Referral from another dealer</option>
+                                        <option value="trade-show">Trade Show</option>
+                                        <option value="print">Print Advertisement</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="md:col-span-2">
+                                    <label for="additional-info" class="block text-gray-700 font-medium mb-2">Additional Information</label>
+                                    <textarea id="additional-info" name="additional-info" rows="3" 
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        placeholder="Any additional information you'd like to share..."></textarea>
+                                </div>
+                                
+                                <div class="md:col-span-2">
+                                    <div class="flex items-start">
+                                        <div class="flex items-center h-5">
+                                            <input id="terms" name="terms" type="checkbox" required 
+                                                class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                                        </div>
+                                        <div class="ml-3 text-sm">
+                                            <label for="terms" class="font-medium text-gray-700">
+                                                I agree to the <a href="privacy-policy.html" class="text-blue-600 hover:text-blue-500">Privacy Policy</a> and 
+                                                <a href="terms-of-service.html" class="text-blue-600 hover:text-blue-500">Terms of Service</a> *
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="md:col-span-2 pt-6">
+                                    <button type="submit" 
+                                        class="w-full md:w-auto bg-[#0057A6] hover:bg-[#003B70] text-white font-bold py-3 px-12 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200 shadow-md hover:shadow-lg border-0 cursor-pointer">
+                                        <span class="flex items-center justify-center">
+                                            <span class="px-4">Submit Application</span>
+                                            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white hidden" id="submitSpinner" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <p class="mt-3 text-sm text-gray-500 text-center md:text-left">
+                                        We'll review your application and get back to you within 2 business days.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="lg:col-span-1 space-y-4">
+                    <div class="flex items-center justify-start md:justify-center" style="width: 200px;">
+                        <img 
+                            src="images/minmar logo.png" 
+                            alt="MINMAR Logo" 
+                            width="180" 
+                            height="80" 
+                            class="object-contain"
+                        />
+                    </div>
+                    <p class="text-sm text-gray-300">Premium windows and doors for the Tri-State Area. Expert installations and replacements.</p>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="windows.html" class="text-gray-300 hover:text-white transition-colors text-sm">Windows</a></li>
+                        <li><a href="doors.html" class="text-gray-300 hover:text-white transition-colors text-sm">Doors</a></li>
+                        <li><a href="energy-solutions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Solutions</a></li>
+                        <li><a href="accessories.html" class="text-gray-300 hover:text-white transition-colors text-sm">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="find-a-dealer.html" class="text-gray-300 hover:text-white transition-colors text-sm">Dealer Locator</a></li>
+                        <li><a href="view-all-products.html" class="text-gray-300 hover:text-white transition-colors text-sm">Product Catalog</a></li>
+                        <li><a href="energy-ratings.html" class="text-gray-300 hover:text-white transition-colors text-sm">Energy Ratings</a></li>
+                        <li><a href="care-instructions.html" class="text-gray-300 hover:text-white transition-colors text-sm">Care Instructions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="warranty-information.html" class="text-gray-300 hover:text-white transition-colors text-sm">Warranty Information</a></li>
+                        <li><a href="faqs.html" class="text-gray-300 hover:text-white transition-colors text-sm">FAQs</a></li>
+                        <li><a href="contact-us.html" class="text-gray-300 hover:text-white transition-colors text-sm">Contact Us</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-colors text-sm">Technical Documents</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors text-sm">About Us</a></li>
+                        <li><a href="job-application.html" class="text-gray-300 hover:text-white transition-colors text-sm">Careers</a></li>
+                        <li><a href="news.html" class="text-gray-300 hover:text-white transition-colors">News & Updates</a></li>
+                        <li><a href="sustainability.html" class="text-gray-300 hover:text-white transition-colors">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-6 text-center text-sm text-gray-400">
+                <p>© <span id="currentYear"></span> Minmar Windows and Doors. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuButton && mobileMenu) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Form submission
+        const dealerForm = document.querySelector('form');
+        if (dealerForm) {
+            dealerForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const submitButton = this.querySelector('button[type="submit"]');
+                const spinner = document.getElementById('submitSpinner');
+                const buttonText = submitButton.querySelector('span:first-child');
+                
+                try {
+                    // Show loading state
+                    submitButton.disabled = true;
+                    buttonText.textContent = 'Submitting...';
+                    spinner.classList.remove('hidden');
+                    submitButton.classList.remove('hover:scale-105', 'hover:shadow-lg');
+                    
+                    // Simulate form submission (replace with actual form submission)
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    
+                    // Show success message
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'mt-4 p-4 bg-green-50 text-green-700 rounded-md';
+                    successMessage.innerHTML = `
+                        <div class='flex'>
+                            <svg class='h-5 w-5 text-green-400 mr-2' fill='currentColor' viewBox='0 0 20 20'>
+                                <path fill-rule='evenodd' d='M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z' clip-rule='evenodd'/>
+                            </svg>
+                            <div>
+                                <h3 class='font-medium'>Application Submitted Successfully!</h3>
+                                <p class='text-sm'>Thank you for your interest in becoming a Minmar dealer. We'll review your application and contact you within 2 business days.</p>
+                            </div>
+                        </div>
+                    `;
+                    
+                    // Insert success message after the form
+                    this.parentNode.insertBefore(successMessage, this.nextSibling);
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    alert('There was an error submitting your application. Please try again or contact us directly.');
+                } finally {
+                    // Reset button state
+                    submitButton.disabled = false;
+                    buttonText.textContent = 'Submit Application';
+                    spinner.classList.add('hidden');
+                    submitButton.classList.add('hover:scale-105', 'hover:shadow-lg');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -120,27 +120,33 @@
                                 <label for="currentWindowType" class="block text-gray-700 font-medium mb-2">Current Window Type</label>
                                 <select id="currentWindowType" name="currentWindowType" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required>
                                     <option value="">Select window type</option>
-                                    <option value="single-pane">Single Pane</option>
-                                    <option value="double-pane-old">Double Pane (10+ years old)</option>
-                                    <option value="double-pane-new">Double Pane (newer)</option>
-                                    <option value="energy-efficient">Energy Efficient</option>
+                                    <option value="single">Single Pane</option>
+                                    <option value="double">Double Pane (10+ years old)</option>
+                                    <option value="double-lowe">Double Pane with Low-E</option>
                                 </select>
                             </div>
                             <div>
                                 <label for="climateZone" class="block text-gray-700 font-medium mb-2">Climate Zone</label>
                                 <select id="climateZone" name="climateZone" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required>
                                     <option value="">Select your climate zone</option>
-                                    <option value="northeast">Northeast</option>
-                                    <option value="southeast">Southeast</option>
-                                    <option value="midwest">Midwest</option>
-                                    <option value="southwest">Southwest</option>
-                                    <option value="west">West</option>
-                                    <option value="northwest">Northwest</option>
+                                    <option value="cold">Cold (Northeast, Midwest)</option>
+                                    <option value="mixed">Mixed (Mid-Atlantic, Northwest)</option>
+                                    <option value="hot">Hot (South, Southwest)</option>
                                 </select>
                             </div>
                             <div>
                                 <label for="avgMonthlyBill" class="block text-gray-700 font-medium mb-2">Average Monthly Energy Bill ($)</label>
                                 <input type="number" id="avgMonthlyBill" name="avgMonthlyBill" placeholder="Enter average monthly bill" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required/>
+                            </div>
+                            <div>
+                                <label for="heatingType" class="block text-gray-700 font-medium mb-2">Primary Heating Type</label>
+                                <select id="heatingType" name="heatingType" class="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-minmar-blue focus:border-transparent" required>
+                                    <option value="">Select heating type</option>
+                                    <option value="electric">Electric</option>
+                                    <option value="gas">Natural Gas</option>
+                                    <option value="oil">Oil</option>
+                                    <option value="heat-pump">Heat Pump</option>
+                                </select>
                             </div>
                             <button type="submit" class="btn btn-default w-full bg-minmar-blue hover:bg-dark-blue py-3 text-lg">Calculate My Savings</button>
                         </form>
@@ -153,7 +159,7 @@
                                     <p id="annualSavings" class="text-3xl font-bold text-energy-green">$0</p>
                                 </div>
                                 <div class="bg-white p-4 rounded-lg text-center shadow">
-                                    <p class="text-gray-700 mb-1">10-Year Savings</p>
+                                    <p class="text-gray-700 mb-1">25-Year Savings</p>
                                     <p id="tenYearSavings" class="text-3xl font-bold text-energy-green">$0</p>
                                 </div>
                                 <div class="bg-white p-4 rounded-lg text-center shadow">
@@ -161,6 +167,24 @@
                                     <p id="energyReduction" class="text-3xl font-bold text-energy-green">0%</p>
                                 </div>
                             </div>
+                            
+                            <div id="comparison-table" class="mb-6 overflow-auto">
+                                <table class="min-w-full text-sm border border-gray-300 rounded-lg shadow-sm my-4">
+                                    <thead>
+                                        <tr class="bg-gradient-to-r from-[#27ae60] to-[#2ecc71] text-white">
+                                            <th class="px-4 py-3 text-left">Upgrade Type</th>
+                                            <th class="px-4 py-3 text-center">Annual Savings</th>
+                                            <th class="px-4 py-3 text-center">25-Year Savings</th>
+                                            <th class="px-4 py-3 text-center">Efficiency Gain</th>
+                                            <th class="px-4 py-3 text-center">Payback Period</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="comparison-table-body">
+                                        <!-- Table content will be inserted here by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                            
                             <p class="text-sm text-gray-700 italic">
                                 Note: These calculations are estimates based on industry averages. Your actual savings may vary 
                                 depending on your specific situation, energy costs, and other factors.
@@ -264,5 +288,220 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Set current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        
+        // U-values for different window types (BTU/hr·ft²·°F)
+        const windowUValues = {
+            'single': 1.25,
+            'double': 0.49,
+            'double-lowe': 0.33,
+            'triple': 0.31,
+            'triple-lowe': 0.20
+        };
+
+        // Climate zone multipliers
+        const climateMultipliers = {
+            'cold': { heating: 1.3, cooling: 0.8 },
+            'mixed': { heating: 1.0, cooling: 1.0 },
+            'hot': { heating: 0.7, cooling: 1.4 }
+        };
+
+        // Home age efficiency factors
+        const ageFactors = {
+            'new': 0.9,
+            'medium': 1.0,
+            'old': 1.2
+        };
+
+        // Heating/cooling day factors by climate
+        const hddCddFactors = {
+            'cold': { hdd: 6500, cdd: 750 },
+            'mixed': { hdd: 4500, cdd: 1200 },
+            'hot': { hdd: 2500, cdd: 2500 }
+        };
+        
+        // Mobile menu toggle
+        document.getElementById('mobileMenuButton').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Energy savings calculator
+        document.getElementById('savings-calculator-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const homeSqFt = parseFloat(document.getElementById('homeSqFt').value);
+            const numWindows = parseFloat(document.getElementById('numWindows').value);
+            const currentWindowType = document.getElementById('currentWindowType').value;
+            const climateZone = document.getElementById('climateZone').value;
+            const avgMonthlyBill = parseFloat(document.getElementById('avgMonthlyBill').value);
+            const heatingType = document.getElementById('heatingType').value;
+            
+            // Calculate window area (rough estimate)
+            const avgWindowSize = 15; // square feet
+            const windowArea = numWindows * avgWindowSize;
+            
+            // Default values for calculation
+            const electricRate = 0.14; // $0.14 per kWh national average
+            const gasRate = 1.20; // $1.20 per therm national average
+            const homeAge = 'medium'; // Assume medium age home
+            
+            // Get current window U-value
+            const currentUValue = windowUValues[currentWindowType];
+            
+            // Default upgrade window type (Triple-pane Low-E)
+            const upgradeWindowType = 'triple-lowe';
+            const upgradeUValue = windowUValues[upgradeWindowType];
+            
+            // Get climate data
+            const climateMultiplier = climateMultipliers[climateZone];
+            const hddCdd = hddCddFactors[climateZone];
+            const ageFactor = ageFactors[homeAge];
+            
+            // Calculate savings using enhanced formula
+            const currentWindowSavings = calculateWindowSavings(
+                currentUValue, 
+                windowArea, 
+                homeSqFt, 
+                hddCdd, 
+                electricRate, 
+                gasRate, 
+                avgMonthlyBill,
+                heatingType, 
+                climateMultiplier, 
+                ageFactor
+            );
+            
+            // Calculate for multiple upgrade options
+            const upgradeTypes = ['double-lowe', 'triple', 'triple-lowe'];
+            const upgradeSavings = {};
+            
+            upgradeTypes.forEach(type => {
+                if (type === currentWindowType) return;
+                
+                const typeUValue = windowUValues[type];
+                upgradeSavings[type] = calculateWindowSavings(
+                    typeUValue, 
+                    windowArea, 
+                    homeSqFt, 
+                    hddCdd, 
+                    electricRate, 
+                    gasRate, 
+                    avgMonthlyBill,
+                    heatingType, 
+                    climateMultiplier, 
+                    ageFactor
+                );
+            });
+            
+            // Use the triple-lowe option for the main display
+            const bestSavings = currentWindowSavings.annual - upgradeSavings['triple-lowe'].annual;
+            const annualSavings = Math.max(Math.round(bestSavings), 0);
+            const lifetimeSavings = annualSavings * 25;
+            const efficiencyImprovement = ((currentUValue - upgradeUValue) / currentUValue) * 100;
+            
+            // Update the results display
+            document.getElementById('annualSavings').textContent = '$' + annualSavings.toLocaleString();
+            document.getElementById('tenYearSavings').textContent = '$' + lifetimeSavings.toLocaleString();
+            document.getElementById('energyReduction').textContent = Math.round(efficiencyImprovement) + '%';
+            
+            // Create comparison table
+            let tableHtml = '';
+            
+            upgradeTypes.forEach(type => {
+                if (type === currentWindowType) return;
+                
+                const upgradeUValue = windowUValues[type];
+                const savingsAmount = currentWindowSavings.annual - upgradeSavings[type].annual;
+                const lifetimeSavingsAmount = savingsAmount * 25;
+                const efficiencyGain = ((currentUValue - upgradeUValue) / currentUValue) * 100;
+                const estimatedCost = numWindows * (type.includes('triple') ? 650 : 500);
+                const paybackPeriod = Math.max(Math.round(estimatedCost / Math.max(savingsAmount, 1)), 1);
+                
+                tableHtml += `
+                    <tr class="border-b border-gray-200 hover:bg-gray-50">
+                        <td class="px-4 py-3 font-medium">${getWindowTypeName(type)}</td>
+                        <td class="px-4 py-3 text-center font-bold">$${Math.max(Math.round(savingsAmount), 0).toLocaleString()}</td>
+                        <td class="px-4 py-3 text-center">$${Math.max(Math.round(lifetimeSavingsAmount), 0).toLocaleString()}</td>
+                        <td class="px-4 py-3 text-center">${Math.round(efficiencyGain)}%</td>
+                        <td class="px-4 py-3 text-center">${paybackPeriod} years</td>
+                    </tr>
+                `;
+            });
+            
+            document.getElementById('comparison-table-body').innerHTML = tableHtml;
+            
+            // Show results
+            document.getElementById('calculator-results').classList.remove('hidden');
+            document.getElementById('calculator-results').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        function calculateWindowSavings(uValue, windowArea, homeSize, hddCdd, electricRate, gasRate, monthlyBill, heatingType, climateMultiplier, ageFactor) {
+            // Base window heat loss calculation (BTU)
+            const annualHeatLoss = uValue * windowArea * 24 * hddCdd.hdd;
+            const annualCoolLoss = uValue * windowArea * 24 * hddCdd.cdd * 0.75; // cooling is ~75% of heating impact
+            
+            // Convert BTU to kWh and therms
+            const kwhPerBtu = 0.000293;
+            const thermsPerBtu = 0.00001;
+            
+            // Calculate energy usage based on heating type
+            let heatingCost, coolingCost;
+            
+            if (heatingType === 'electric') {
+                heatingCost = (annualHeatLoss * kwhPerBtu) * electricRate;
+            } else if (heatingType === 'gas') {
+                heatingCost = (annualHeatLoss * thermsPerBtu) * gasRate;
+            } else if (heatingType === 'oil') {
+                // Approximate oil cost (oil prices vary but roughly $3 per gallon, ~140k BTU per gallon)
+                const gallonsPerBtu = 1 / 140000;
+                const oilPricePerGallon = 3.00;
+                heatingCost = (annualHeatLoss * gallonsPerBtu) * oilPricePerGallon;
+            } else { // heat pump
+                // Heat pumps are more efficient (COP ~3)
+                heatingCost = (annualHeatLoss * kwhPerBtu / 3) * electricRate;
+            }
+            
+            // Cooling is almost always electric
+            coolingCost = (annualCoolLoss * kwhPerBtu) * electricRate;
+            
+            // Apply climate and age factors
+            heatingCost *= climateMultiplier.heating * ageFactor;
+            coolingCost *= climateMultiplier.cooling * ageFactor;
+            
+            // Window heat loss is only a portion of total energy costs
+            // This ensures the calculation doesn't exceed reasonable amounts
+            const windowPercentage = Math.min(windowArea / (homeSize * 0.15), 0.4);
+            const windowFactor = (windowPercentage + 0.1); // Even small windows have some impact
+            
+            // Sanity check against bill
+            const calculatedAnnual = (heatingCost + coolingCost);
+            const billBasedAnnual = monthlyBill * 12 * windowFactor;
+            
+            // Use a weighted average to balance calculated and bill-based estimates
+            const annual = (calculatedAnnual * 0.7) + (billBasedAnnual * 0.3);
+            
+            return {
+                annual: annual,
+                heating: heatingCost,
+                cooling: coolingCost
+            };
+        }
+        
+        function getWindowTypeName(type) {
+            switch(type) {
+                case 'double-lowe': return 'Double-pane Low-E';
+                case 'triple': return 'Triple-pane';
+                case 'triple-lowe': return 'Triple-pane Low-E';
+                case 'double': return 'Double-pane';
+                case 'single': return 'Single-pane';
+                default: return type;
+            }
+        }
+    </script>
 </body>
 </html>

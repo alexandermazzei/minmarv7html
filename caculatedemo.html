@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Savings Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .calculator-form {
+            padding: 40px;
+        }
+
+        .form-section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+            border-left: 4px solid #3498db;
+        }
+
+        .form-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-section h3::before {
+            content: '📍';
+            margin-right: 10px;
+            font-size: 1.5rem;
+        }
+
+        .form-section:nth-child(2) h3::before { content: '🏠'; }
+        .form-section:nth-child(3) h3::before { content: '🪟'; }
+        .form-section:nth-child(4) h3::before { content: '💡'; }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        input, select {
+            padding: 12px 15px;
+            border: 2px solid #e0e6ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+        }
+
+        .calculate-btn {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 30px auto 0;
+            box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+        }
+
+        .calculate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(46, 204, 113, 0.4);
+        }
+
+        .results {
+            display: none;
+            margin-top: 40px;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 15px;
+            border: 2px solid #27ae60;
+        }
+
+        .results.show {
+            display: block;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .results h3 {
+            color: #27ae60;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .savings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .savings-item {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .savings-amount {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #27ae60;
+            margin-bottom: 5px;
+        }
+
+        .savings-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .breakdown {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .breakdown h4 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cta {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta h4 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .cta-btn {
+            background: white;
+            color: #e74c3c;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .calculator-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Energy Savings Calculator</h1>
+            <p>Discover how much you could save with energy-efficient windows</p>
+        </div>
+
+        <form class="calculator-form" id="savingsForm">
+            <div class="form-section">
+                <h3>Location & Climate</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="zipCode">ZIP Code</label>
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Enter your ZIP code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="climateZone">Climate Zone</label>
+                        <select id="climateZone" name="climateZone" required>
+                            <option value="">Select your region</option>
+                            <option value="cold">Cold (Northern states)</option>
+                            <option value="mixed">Mixed (Central states)</option>
+                            <option value="hot">Hot (Southern states)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Home Details</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="homeSize">Home Size (sq ft)</label>
+                        <input type="number" id="homeSize" name="homeSize" placeholder="e.g., 2000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="homeAge">Home Age</label>
+                        <select id="homeAge" name="homeAge" required>
+                            <option value="">Select age range</option>
+                            <option value="new">Less than 10 years</option>
+                            <option value="medium">10-30 years</option>
+                            <option value="old">Over 30 years</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Current Windows</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="windowType">Current Window Type</label>
+                        <select id="windowType" name="windowType" required>
+                            <option value="">Select window type</option>
+                            <option value="single">Single-pane</option>
+                            <option value="double">Double-pane</option>
+                            <option value="double-lowe">Double-pane Low-E</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="windowCount">Number of Windows</label>
+                        <input type="number" id="windowCount" name="windowCount" placeholder="e.g., 15" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="windowArea">Total Window Area (sq ft)</label>
+                        <input type="number" id="windowArea" name="windowArea" placeholder="e.g., 200" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newWindowType">Upgrade Window Type</label>
+                        <select id="newWindowType" name="newWindowType" required>
+                            <option value="">Select upgrade</option>
+                            <option value="double-lowe">Double-pane Low-E</option>
+                            <option value="triple">Triple-pane</option>
+                            <option value="triple-lowe">Triple-pane Low-E</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>Energy Costs</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="electricRate">Electricity Rate (¢/kWh)</label>
+                        <input type="number" id="electricRate" name="electricRate" placeholder="e.g., 12" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gasRate">Natural Gas Rate ($/therm)</label>
+                        <input type="number" id="gasRate" name="gasRate" placeholder="e.g., 1.20" step="0.01" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="monthlyBill">Average Monthly Energy Bill</label>
+                        <input type="number" id="monthlyBill" name="monthlyBill" placeholder="e.g., 150" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="heatingType">Primary Heating Type</label>
+                        <select id="heatingType" name="heatingType" required>
+                            <option value="">Select heating type</option>
+                            <option value="electric">Electric</option>
+                            <option value="gas">Natural Gas</option>
+                            <option value="oil">Oil</option>
+                            <option value="heat-pump">Heat Pump</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="calculate-btn">Calculate My Savings</button>
+        </form>
+
+        <div class="results" id="results">
+            <h3>Your Potential Energy Savings</h3>
+            
+            <div id="summaryQuote" class="text-center text-lg font-semibold text-dark-blue mb-4"></div>
+
+            <div class="savings-grid">
+                <div class="savings-item">
+                    <div class="savings-amount" id="annualSavings">$0</div>
+                    <div class="savings-label">Annual Savings</div>
+                </div>
+                <div class="savings-item">
+                    <div class="savings-amount" id="monthlySavings">$0</div>
+                    <div class="savings-label">Monthly Savings</div>
+                </div>
+                <div class="savings-item">
+                    <div class="savings-amount" id="lifetimeSavings">$0</div>
+                    <div class="savings-label">25-Year Savings</div>
+                </div>
+                <div class="savings-item">
+                    <div class="savings-amount" id="energyReduction">0%</div>
+                    <div class="savings-label">Energy Reduction</div>
+                </div>
+            </div>
+
+            <div id="comparisonTable" class="my-6"></div>
+
+            <div class="breakdown">
+                <h4>Savings Breakdown</h4>
+                <div class="breakdown-item">
+                    <span>Heating Savings:</span>
+                    <span id="heatingSavings">$0/year</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Cooling Savings:</span>
+                    <span id="coolingSavings">$0/year</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Energy Efficiency Improvement:</span>
+                    <span id="efficiencyImprovement">0%</span>
+                </div>
+                <div class="breakdown-item">
+                    <span>Estimated Payback Period:</span>
+                    <span id="paybackPeriod">0 years</span>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h4>Ready to Start Saving?</h4>
+                <p>Get a free consultation and personalized quote for your home.</p>
+                <button class="cta-btn" onclick="requestQuote()">Get Free Quote</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // U-values for different window types (BTU/hr·ft²·°F)
+        const windowUValues = {
+            'single': 1.25,
+            'double': 0.49,
+            'double-lowe': 0.33,
+            'triple': 0.31,
+            'triple-lowe': 0.20
+        };
+
+        // Climate zone multipliers
+        const climateMultipliers = {
+            'cold': { heating: 1.3, cooling: 0.8 },
+            'mixed': { heating: 1.0, cooling: 1.0 },
+            'hot': { heating: 0.7, cooling: 1.4 }
+        };
+
+        // Home age efficiency factors
+        const ageFactors = {
+            'new': 0.9,
+            'medium': 1.0,
+            'old': 1.2
+        };
+
+        // Heating/cooling day factors by climate
+        const hddCddFactors = {
+            'cold': { hdd: 6500, cdd: 750 },
+            'mixed': { hdd: 4500, cdd: 1200 },
+            'hot': { hdd: 2500, cdd: 2500 }
+        };
+
+        document.getElementById('savingsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            calculateSavings();
+        });
+
+        function calculateSavings() {
+            // Get form values
+            const formData = new FormData(document.getElementById('savingsForm'));
+            const data = Object.fromEntries(formData);
+
+            // Convert to numbers
+            const homeSize = parseFloat(data.homeSize);
+            const windowArea = parseFloat(data.windowArea);
+            const windowCount = parseFloat(data.windowCount);
+            const electricRate = parseFloat(data.electricRate) / 100; // Convert cents to dollars
+            const gasRate = parseFloat(data.gasRate);
+            const monthlyBill = parseFloat(data.monthlyBill);
+
+            // Get U-values
+            const currentUValue = windowUValues[data.windowType];
+            const newUValue = windowUValues[data.newWindowType];
+            
+            // Get climate data
+            const climateMultiplier = climateMultipliers[data.climateZone];
+            const hddCdd = hddCddFactors[data.climateZone];
+            const ageFactor = ageFactors[data.homeAge];
+
+            // Calculate savings using enhanced formula
+            const currentWindowSavings = calculateWindowSavings(
+                currentUValue, 
+                windowArea, 
+                homeSize, 
+                hddCdd, 
+                electricRate, 
+                gasRate, 
+                monthlyBill,
+                data.heatingType, 
+                climateMultiplier, 
+                ageFactor
+            );
+            
+            const newWindowSavings = calculateWindowSavings(
+                newUValue, 
+                windowArea, 
+                homeSize, 
+                hddCdd, 
+                electricRate, 
+                gasRate, 
+                monthlyBill,
+                data.heatingType, 
+                climateMultiplier, 
+                ageFactor
+            );
+
+            // Calculate differences (savings)
+            const annualSavings = currentWindowSavings.annual - newWindowSavings.annual;
+            const monthlySavings = annualSavings / 12;
+            const lifetimeSavings = annualSavings * 25;
+            const efficiencyImprovement = ((currentUValue - newUValue) / currentUValue) * 100;
+            
+            // Estimated window cost for payback calculation
+            const estimatedCost = windowCount * (data.newWindowType.includes('triple') ? 650 : 500);
+            const paybackPeriod = Math.max(estimatedCost / Math.max(annualSavings, 1), 1);
+
+            // Format display values
+            const displayAnnual = Math.max(Math.round(annualSavings), 0);
+            const displayMonthly = Math.max(Math.round(monthlySavings), 0);
+            const displayLifetime = Math.max(Math.round(lifetimeSavings), 0);
+            const displayEfficiency = Math.max(Math.round(efficiencyImprovement), 0);
+            const displayPayback = Math.max(Math.round(paybackPeriod), 1);
+
+            // Display results
+            document.getElementById('annualSavings').textContent = '$' + displayAnnual.toLocaleString();
+            document.getElementById('monthlySavings').textContent = '$' + displayMonthly;
+            document.getElementById('lifetimeSavings').textContent = '$' + displayLifetime.toLocaleString();
+            document.getElementById('energyReduction').textContent = displayEfficiency + '%';
+            document.getElementById('heatingSavings').textContent = '$' + Math.round(currentWindowSavings.heating - newWindowSavings.heating) + '/year';
+            document.getElementById('coolingSavings').textContent = '$' + Math.round(currentWindowSavings.cooling - newWindowSavings.cooling) + '/year';
+            document.getElementById('efficiencyImprovement').textContent = displayEfficiency + '%';
+            document.getElementById('paybackPeriod').textContent = displayPayback + ' years';
+
+            // Show summary quote
+            document.getElementById('summaryQuote').textContent = `You could save up to $${displayAnnual.toLocaleString()}/year by upgrading to ${getWindowTypeName(data.newWindowType)}.`;
+
+            // Show comparison table for all upgrade types
+            const upgradeTypes = ['double-lowe', 'triple', 'triple-lowe'];
+            
+            // Start table HTML with improved styling
+            let tableHtml = `
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm border border-gray-300 rounded-lg shadow-sm my-6">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-[#27ae60] to-[#2ecc71] text-white">
+                                <th class="px-6 py-3 text-left">Upgrade Type</th>
+                                <th class="px-6 py-3 text-center">Annual Savings</th>
+                                <th class="px-6 py-3 text-center">25-Year Savings</th>
+                                <th class="px-6 py-3 text-center">Efficiency Gain</th>
+                                <th class="px-6 py-3 text-center">Payback Period</th>
+                            </tr>
+                        </thead>
+                        <tbody>`;
+            
+            // Calculate and add row for each upgrade type
+            upgradeTypes.forEach(type => {
+                if (type === data.windowType) return; // skip if same as current
+                
+                const upgradeUValue = windowUValues[type];
+                const upgradeSavings = calculateWindowSavings(
+                    upgradeUValue, 
+                    windowArea, 
+                    homeSize, 
+                    hddCdd, 
+                    electricRate, 
+                    gasRate, 
+                    monthlyBill,
+                    data.heatingType, 
+                    climateMultiplier, 
+                    ageFactor
+                );
+                
+                const upgradeAnnualSavings = currentWindowSavings.annual - upgradeSavings.annual;
+                const lifetime25YearSavings = upgradeAnnualSavings * 25;
+                const upgradeEfficiency = ((currentUValue - upgradeUValue) / currentUValue) * 100;
+                const upgradePayback = Math.max(windowCount * (type.includes('triple') ? 650 : 500) / Math.max(upgradeAnnualSavings, 1), 1);
+                
+                const isSelected = type === data.newWindowType;
+                const rowClass = isSelected ? 'bg-green-50' : '';
+                const selectedMark = isSelected ? '✓ ' : '';
+                
+                tableHtml += `
+                    <tr class="${rowClass} border-b border-gray-200 hover:bg-gray-50">
+                        <td class="px-6 py-4 font-medium">
+                            ${selectedMark}${getWindowTypeName(type)}${isSelected ? ' <span class="text-green-600">(Selected)</span>' : ''}
+                        </td>
+                        <td class="px-6 py-4 text-center font-bold">$${Math.max(Math.round(upgradeAnnualSavings), 0).toLocaleString()}</td>
+                        <td class="px-6 py-4 text-center">$${Math.max(Math.round(lifetime25YearSavings), 0).toLocaleString()}</td>
+                        <td class="px-6 py-4 text-center">${Math.round(upgradeEfficiency)}%</td>
+                        <td class="px-6 py-4 text-center">${Math.round(upgradePayback)} years</td>
+                    </tr>`;
+            });
+            
+            tableHtml += '</tbody></table></div>';
+            document.getElementById('comparisonTable').innerHTML = tableHtml;
+
+            // Show results
+            document.getElementById('results').classList.add('show');
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function calculateWindowSavings(uValue, windowArea, homeSize, hddCdd, electricRate, gasRate, monthlyBill, heatingType, climateMultiplier, ageFactor) {
+            // Base window heat loss calculation (BTU)
+            const annualHeatLoss = uValue * windowArea * 24 * hddCdd.hdd;
+            const annualCoolLoss = uValue * windowArea * 24 * hddCdd.cdd * 0.75; // cooling is ~75% of heating impact
+            
+            // Convert BTU to kWh and therms
+            const kwhPerBtu = 0.000293;
+            const thermsPerBtu = 0.00001;
+            
+            // Calculate energy usage based on heating type
+            let heatingCost, coolingCost;
+            
+            if (heatingType === 'electric') {
+                heatingCost = (annualHeatLoss * kwhPerBtu) * electricRate;
+            } else if (heatingType === 'gas') {
+                heatingCost = (annualHeatLoss * thermsPerBtu) * gasRate;
+            } else if (heatingType === 'oil') {
+                // Approximate oil cost (oil prices vary but roughly $3 per gallon, ~140k BTU per gallon)
+                const gallonsPerBtu = 1 / 140000;
+                const oilPricePerGallon = 3.00;
+                heatingCost = (annualHeatLoss * gallonsPerBtu) * oilPricePerGallon;
+            } else { // heat pump
+                // Heat pumps are more efficient (COP ~3)
+                heatingCost = (annualHeatLoss * kwhPerBtu / 3) * electricRate;
+            }
+            
+            // Cooling is almost always electric
+            coolingCost = (annualCoolLoss * kwhPerBtu) * electricRate;
+            
+            // Apply climate and age factors
+            heatingCost *= climateMultiplier.heating * ageFactor;
+            coolingCost *= climateMultiplier.cooling * ageFactor;
+            
+            // Window heat loss is only a portion of total energy costs
+            // This ensures the calculation doesn't exceed reasonable amounts
+            const windowPercentage = Math.min(windowArea / (homeSize * 0.15), 0.4);
+            const windowFactor = (windowPercentage + 0.1); // Even small windows have some impact
+            
+            // Sanity check against bill
+            const calculatedAnnual = (heatingCost + coolingCost);
+            const billBasedAnnual = monthlyBill * 12 * windowFactor;
+            
+            // Use a weighted average to balance calculated and bill-based estimates
+            const annual = (calculatedAnnual * 0.7) + (billBasedAnnual * 0.3);
+            
+            return {
+                annual: annual,
+                heating: heatingCost,
+                cooling: coolingCost
+            };
+        }
+
+        function getWindowTypeName(type) {
+            switch(type) {
+                case 'double-lowe': return 'Double-pane Low-E';
+                case 'triple': return 'Triple-pane';
+                case 'triple-lowe': return 'Triple-pane Low-E';
+                case 'double': return 'Double-pane';
+                case 'single': return 'Single-pane';
+                default: return type;
+            }
+        }
+
+        function requestQuote() {
+            alert('Thank you for your interest! A window specialist will contact you within 24 hours to schedule your free consultation.');
+            // In a real implementation, this would trigger a form submission or API call
+        }
+
+        // Auto-populate some defaults based on location
+        document.getElementById('zipCode').addEventListener('blur', function() {
+            const zip = this.value;
+            if (zip.length === 5) {
+                // This is a simplified example - in reality you'd use a ZIP code API
+                const firstDigit = parseInt(zip.charAt(0));
+                if (firstDigit <= 2) {
+                    document.getElementById('climateZone').value = 'cold';
+                } else if (firstDigit <= 6) {
+                    document.getElementById('climateZone').value = 'mixed';
+                } else {
+                    document.getElementById('climateZone').value = 'hot';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -99,6 +99,36 @@ document.addEventListener('DOMContentLoaded', function () {
     if (careTabsContainer) {
         const careTabs = careTabsContainer.querySelectorAll('.care-tab');
         const careSections = document.querySelectorAll('.care-section');
+        
+        // Function to show a specific section and update tab states
+        function showCareSection(indexToShow) {
+            // Hide all sections and remove active class from all tabs
+            careSections.forEach((section, index) => {
+                if (index === indexToShow) {
+                    section.style.display = 'block';
+                    careTabs[index].classList.add('text-blue-600', 'border-blue-500');
+                    careTabs[index].classList.remove('text-gray-600');
+                } else {
+                    section.style.display = 'none';
+                    careTabs[index].classList.remove('text-blue-600', 'border-blue-500');
+                    careTabs[index].classList.add('text-gray-600');
+                }
+            });
+        }
+        
+        // Add click event listeners to tabs
+        careTabs.forEach((tab, index) => {
+            tab.addEventListener('click', () => {
+                showCareSection(index);
+            });
+        });
+        
+        // Show first tab by default if no tab is active
+        const hasActiveTab = Array.from(careTabs).some(tab => tab.classList.contains('active'));
+        if (!hasActiveTab && careTabs.length > 0) {
+            careTabs[0].classList.add('active');
+            showCareSection(0);
+        }
 
         // Function to show a specific section and update tab states
         function showCareSection(indexToShow) {
