@@ -107,9 +107,18 @@
                     <div class="bg-white rounded-lg shadow-md p-8">
                         <h3 class="text-2xl font-bold text-dark-blue mb-6">Send Us a Message</h3>
                         <!-- Contact Form (from contact-form.tsx logic) -->
-                        <form id="contact-us-form" action="https://formsubmit.co/alexandermazzei@gmail.com" method="POST" class="space-y-6">
+                        <form id="contact-us-form" action="https://formsubmit.co/alexandermazzei@gmail.com" method="POST" class="space-y-6 relative">
+                            <div id="form-success" class="hidden absolute inset-0 bg-white bg-opacity-95 flex flex-col items-center justify-center p-8 rounded-lg z-10">
+                                <div class="text-green-500 text-6xl mb-4">✓</div>
+                                <h3 class="text-2xl font-bold text-dark-blue mb-2">Message Sent!</h3>
+                                <p class="text-center text-gray-700 mb-6">Thank you for contacting us. We've received your message and will get back to you shortly.</p>
+                                <button type="button" onclick="this.closest('form').reset(); this.closest('#form-success').classList.add('hidden')" class="bg-minmar-blue text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Send Another Message</button>
+                            </div>
                             <input type="hidden" name="_subject" value="New Contact Form Submission">
-                            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                            <input type="hidden" name="_next" value="#thanks" data-thank-you="true">
+                            <input type="hidden" name="_format" value="plain">
+                            <input type="hidden" name="_confirmation_title" value="Thank you for contacting us!">
+                            <input type="hidden" name="_confirmation_message" value="We've received your message and will get back to you shortly.">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="text" name="_honey" style="display:none">
                             <input type="hidden" name="_template" value="table">
@@ -155,11 +164,45 @@
                             <button type="submit" class="btn btn-default w-full">Send Message</button>
                             <input type="hidden" name="_autoresponse" value="Thank you for contacting Minmar Windows and Doors. We have received your message and will get back to you shortly.">
                         </form>
-                        <div id="submitSuccessContact" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-md p-4 mb-6">
-                            <p class="font-medium">Thank you for your message!</p>
-                            <p>We have received your inquiry and will get back to you shortly.</p>
-                            <button class="mt-4 btn btn-outline" id="sendAnotherContact">Send Another Message</button>
-                        </div>
+                        <script>
+                        // Handle form submission and show success message
+                        document.getElementById('contact-us-form').addEventListener('submit', function(e) {
+                            const form = this;
+                            const formData = new FormData(form);
+                            const submitButton = form.querySelector('button[type="submit"]');
+                            const originalButtonText = submitButton.innerHTML;
+                            
+                            // Show loading state
+                            submitButton.disabled = true;
+                            submitButton.innerHTML = 'Sending...';
+                            
+                            fetch(form.action, {
+                                method: 'POST',
+                                body: formData
+                            })
+                            .then(response => {
+                                if (response.ok) {
+                                    // Show success message
+                                    document.getElementById('form-success').classList.remove('hidden');
+                                    form.reset();
+                                } else {
+                                    throw new Error('Network response was not ok');
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                const errorDiv = document.getElementById('submitErrorContact');
+                                errorDiv.textContent = 'There was an error sending your message. Please try again or contact us directly.';
+                                errorDiv.classList.remove('hidden');
+                            })
+                            .finally(() => {
+                                submitButton.disabled = false;
+                                submitButton.innerHTML = originalButtonText;
+                            });
+                            
+                            e.preventDefault();
+                        });
+                        </script>
                     </div>
 
                     <div>
