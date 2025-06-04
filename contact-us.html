@@ -107,7 +107,12 @@
                     <div class="bg-white rounded-lg shadow-md p-8">
                         <h3 class="text-2xl font-bold text-dark-blue mb-6">Send Us a Message</h3>
                         <!-- Contact Form (from contact-form.tsx logic) -->
-                        <form id="contact-us-form" class="space-y-6">
+                        <form id="contact-us-form" action="https://formsubmit.co/info@minmarwindows.com" method="POST" class="space-y-6">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission">
+                            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_template" value="table">
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">First Name <span class="text-red-500">*</span></label>
@@ -148,6 +153,7 @@
                             </div>
                             <div id="submitErrorContact" class="hidden bg-red-50 border border-red-200 text-red-800 rounded-md p-4"></div>
                             <button type="submit" class="btn btn-default w-full">Send Message</button>
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting Minmar Windows and Doors. We have received your message and will get back to you shortly.">
                         </form>
                         <div id="submitSuccessContact" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-md p-4 mb-6">
                             <p class="font-medium">Thank you for your message!</p>

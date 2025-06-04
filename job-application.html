@@ -99,7 +99,14 @@
             <div class="container mx-auto px-4">
                 <div class="max-w-3xl mx-auto">
                     <h2 class="text-3xl font-bold text-dark-blue mb-6">Employment Application</h2>
-                    <form id="job-application-form" class="space-y-8">
+                    <form id="job-application-form" action="https://formsubmit.co/hr@minmarwindows.com" method="POST" enctype="multipart/form-data" class="space-y-8">
+                            <input type="hidden" name="_subject" value="New Job Application Submission">
+                            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_autoresponse" value="Thank you for your interest in joining Minmar Windows and Doors. We have received your job application and will review it shortly. If your qualifications match our needs, we will contact you for the next steps in the hiring process.">
+                            <input type="hidden" name="_format" value="plain">
                         <!-- Personal Information -->
                         <div class="bg-white rounded-lg shadow-md p-6">
                             <h3 class="text-xl font-bold text-dark-blue mb-4">Personal Information</h3>
@@ -128,8 +135,8 @@
                         <div class="bg-white rounded-lg shadow-md p-6">
                             <h3 class="text-xl font-bold text-dark-blue mb-4">Resume & Cover Letter</h3>
                             <div class="space-y-6">
-                                <div><label for="resume" class="block text-sm font-medium text-gray-700 mb-1">Resume*</label><div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"><div class="space-y-1 text-center"><svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="flex text-sm text-gray-700"><label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-minmar-blue hover:text-blue-500 focus-within:outline-none"><span>Upload a file</span><input id="file-upload" name="file-upload" type="file" class="sr-only" required/></label><p class="pl-1">or drag and drop</p></div><p class="text-xs text-gray-500">PDF, DOC, DOCX up to 2MB</p></div></div></div>
-                                <div><label for="coverLetter" class="block text-sm font-medium text-gray-700 mb-1">Cover Letter (Optional)</label><div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"><div class="space-y-1 text-center"><svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="flex text-sm text-gray-700"><label for="cover-letter-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-minmar-blue hover:text-blue-500 focus-within:outline-none"><span>Upload a file</span><input id="cover-letter-upload" name="cover-letter-upload" type="file" class="sr-only"/></label><p class="pl-1">or drag and drop</p></div><p class="text-xs text-gray-500">PDF, DOC, DOCX up to 2MB</p></div></div></div>
+                                <div><label for="resume" class="block text-sm font-medium text-gray-700 mb-1">Resume*</label><div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"><div class="space-y-1 text-center"><svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="flex text-sm text-gray-700"><label for="file-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-minmar-blue hover:text-blue-500 focus-within:outline-none"><span>Upload a file</span><input id="file-upload" name="resume" type="file" class="sr-only" accept=".pdf,.doc,.docx" required/></label><p class="pl-1">or drag and drop</p></div><p class="text-xs text-gray-500">PDF, DOC, DOCX up to 2MB</p></div></div></div>
+                                <div><label for="coverLetter" class="block text-sm font-medium text-gray-700 mb-1">Cover Letter (Optional)</label><div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md"><div class="space-y-1 text-center"><svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48" aria-hidden="true"><path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="flex text-sm text-gray-700"><label for="cover-letter-upload" class="relative cursor-pointer bg-white rounded-md font-medium text-minmar-blue hover:text-blue-500 focus-within:outline-none"><span>Upload a file</span><input id="cover-letter-upload" name="cover_letter" type="file" class="sr-only" accept=".pdf,.doc,.docx"/></label><p class="pl-1">or drag and drop</p></div><p class="text-xs text-gray-500">PDF, DOC, DOCX up to 2MB</p></div></div></div>
                             </div>
                         </div>
                         <!-- Additional Information -->
@@ -145,6 +152,11 @@
                             <button type="submit" class="btn btn-default px-8 py-3">Submit Application</button>
                         </div>
                         <div id="application-response" class="hidden mt-4 p-4 rounded-md"></div>
+                            <div id="form-success" class="hidden bg-green-50 border border-green-200 text-green-800 rounded-md p-4 mb-6">
+                                <p class="font-medium">Application Submitted Successfully!</p>
+                                <p>Thank you for your interest in joining our team. We'll review your application and contact you if your qualifications match our needs.</p>
+                                <button type="button" class="mt-4 btn btn-outline" onclick="location.reload()">Submit Another Application</button>
+                            </div>
                         <p class="text-sm text-gray-500 text-center mt-4">By submitting this application, you agree to our <a href="privacy-policy.html" class="text-minmar-blue hover:underline">Privacy Policy</a> and <a href="#" class="text-minmar-blue hover:underline">Terms of Service</a>.</p>
                     </form>
                 </div>
