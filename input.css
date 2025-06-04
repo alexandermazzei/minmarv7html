@@ -404,11 +404,41 @@ summary {
 
   /* Button hover states are handled individually above */
 
+  /* CTA Buttons */
+  .cta-button {
+    @apply relative inline-flex items-center justify-center px-8 py-3 text-base font-semibold text-white border-2 border-white rounded-lg overflow-hidden transition-all duration-300 ease-in-out cursor-pointer;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    min-width: 180px;
+  }
+  
+  .cta-button::before {
+    @apply absolute inset-0 w-0 bg-white transition-all duration-300 ease-in-out;
+    content: '';
+    z-index: 0;
+  }
+  
+  .cta-button:hover::before {
+    @apply w-full;
+  }
+  
+  .cta-button:hover {
+    @apply text-[#0057A6] shadow-lg transform -translate-y-1;
+  }
+  
+  .cta-button-secondary {
+    @apply bg-[#0057A6] border-[#0057A6];
+  }
+  
+  .cta-button-secondary:hover {
+    @apply text-white bg-opacity-90;
+  }
+  
   .btn-header {
-    @apply bg-white text-[#0057A6] border border-[#0057A6] rounded-lg px-6 py-3 font-medium transition-colors duration-200 cursor-pointer shadow-sm text-base text-center;
+    @apply bg-transparent text-white border-2 border-white rounded-lg px-6 py-3 font-medium transition-all duration-200 cursor-pointer text-base text-center hover:bg-white hover:text-[#0057A6] hover:shadow-lg transform hover:-translate-y-0.5;
   }
   .btn-header:hover, .btn-header:focus {
-    @apply bg-[#0057A6] text-white border-[#0057A6];
+    @apply bg-white text-[#0057A6] border-white;
   }
   @media (max-width: 640px) {
     .btn-header {
